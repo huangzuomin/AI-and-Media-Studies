@@ -1,3 +1,60 @@
+# 欢迎来到我的个人主页
+
+你好！我是 [你的名字]，一名专注于媒体与 AI 创新研究与实践的 [你的身份，例如：研究员/开发者/学生]。
+
+这个网站是我分享研究成果、项目进展、技术思考和个人见解的平台。
+
+## 关于我
+
+在这里简要介绍你自己，可以包括：
+
+*   你的学术背景或工作经历。
+*   你对媒体与 AI 领域的兴趣来源。
+*   你的主要技能和专长。
+
+## 研究方向与兴趣
+
+详细说明你当前关注的研究领域或实践方向，例如：
+
+*   AI 在新闻传播中的应用
+*   计算广告学与用户行为分析
+*   多模态内容生成与理解
+*   媒体伦理与 AI 治理
+*   [其他你感兴趣的方向]
+
+## 主要项目与成果
+
+列出一些你参与或独立完成的重要项目、发表的论文或取得的成果：
+
+*   **项目一：[项目名称]**
+    *   简要描述项目目标和你的贡献。
+    *   （可选）提供项目链接或演示。
+*   **项目二：[项目名称]**
+    *   ...
+*   **论文/文章：[标题]**
+    *   （可选）提供链接或 DOI。
+
+## 技术栈与工具
+
+列出你常用的技术和工具，例如：
+
+*   **编程语言：** Python, Go, JavaScript, ...
+*   **框架/库：** TensorFlow, PyTorch, Hugo, React, ...
+*   **工具：** Git, Docker, ...
+
+## 联系我
+
+如果你对我的研究或项目感兴趣，或者希望进行交流合作，可以通过以下方式联系我：
+
+*   **邮箱：** [你的邮箱地址]
+*   **GitHub：** [你的 GitHub 主页链接]
+*   **LinkedIn：** [你的 LinkedIn 主页链接]
+*   **个人博客/网站：** [你的网站链接，如果与当前网站不同]
+
+---
+
+感谢你的访问！
+
 <h1 align="center">Hugo + Tailwind CSS Starter and Boilerplate</h1>
 
 <p align="center">Hugoplate is a free starter template built with Hugo, and Tailwind CSS v4.0, providing everything you need to jumpstart your Hugo project and save valuable time.</p>
