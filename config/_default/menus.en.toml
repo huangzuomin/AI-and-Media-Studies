@@ -12,23 +12,24 @@ url = "/about"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "/elements"
+name = "Research"
+url = "/research"
 weight = 3
 
 [[main]]
+name = "Projects"
+url = "/projects"
 weight = 4
-name = "Pages"
 
 [[main]]
-parent = "Pages"
 name = "Blog"
 url = "/blog"
+weight = 5
 
 [[main]]
-parent = "Pages"
 name = "Contact"
 url = "/contact"
+weight = 6
 
 [[main]]
 parent = "Pages"

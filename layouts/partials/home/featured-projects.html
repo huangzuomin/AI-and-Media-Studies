@@ -1,0 +1,34 @@
+<!-- 首页项目案例展示 -->
+<section class="section bg-theme-light dark:bg-darkmode-theme-light">
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+        <h2 class="mb-4">项目案例</h2>
+        <p>探索我们在AI与媒体交叉领域的创新项目与实践应用</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      {{ $projects := where site.RegularPages "Type" "projects" | first 3 }}
+      {{ if gt (len $projects) 0 }}
+        {{ range $projects }}
+          <div class="lg:col-4 md:col-6 mb-8">
+            {{ partial "components/project-card" . }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <div class="col-12 text-center">
+          <p class="mb-8">暂无项目案例</p>
+        </div>
+      {{ end }}
+    </div>
+    
+    {{ if gt (len $projects) 0 }}
+      <div class="row">
+        <div class="mx-auto text-center">
+          <a href="{{ `projects` | relLangURL }}" class="btn btn-primary">查看所有项目</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section> 

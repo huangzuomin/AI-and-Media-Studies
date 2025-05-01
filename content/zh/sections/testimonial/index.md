@@ -1,5 +1,5 @@
 ---
-enable: true
+enable: false
 title: "用户对我们的评价"
 description: "不要只相信我们的话 - 听听一些满意用户的评价！查看下面的一些用户评价，了解其他人对我们的看法。"
 

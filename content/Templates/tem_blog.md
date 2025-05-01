@@ -14,7 +14,7 @@ summary: "在这里写一段明确的文章摘要，会显示在博客列表页�
 draft: true
 # --- 可选字段 ---
 # 文章作者
-author: "你的名字"
+author: 黄作敏
 # 文章分类
 categories:
  - "分类一"

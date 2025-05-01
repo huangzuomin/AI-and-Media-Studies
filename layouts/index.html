@@ -32,6 +32,10 @@
   {{ end }}
   <!-- /Banner with Background Image -->
 
+  <!-- Recent Posts -->
+  {{ partial "recent-posts.html" . }}
+  <!-- /Recent Posts -->
+
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">
@@ -76,9 +80,38 @@
   {{ end }}
   <!-- /Features -->
 
-  <!-- Recent Posts -->
-  {{ partial "recent-posts.html" . }}
-  <!-- /Recent Posts -->
+  <!-- Featured Projects -->
+  {{ if site.GetPage "projects" }}
+    {{ partial "home/featured-projects.html" . }}
+  {{ end }}
+  <!-- /Featured Projects -->
+
+  <!-- Call to Action -->
+  {{ with site.GetPage "sections/call-to-action" }}
+    {{ if .Params.enable }}
+      <section class="section bg-gradient">
+        <div class="container">
+          <div class="row justify-center">
+            <div class="lg:col-8 text-center">
+              {{ if .Params.image }}
+                <div class="mb-6">
+                  <img src="{{ .Params.image }}" alt="{{ .Title }}" class="mx-auto h-auto max-w-full" style="max-height: 200px;">
+                </div>
+              {{ end }}
+              <h2 class="mb-4">{{ .Title | markdownify }}</h2>
+              <p class="mb-8">{{ .Params.description | markdownify }}</p>
+              {{ with .Params.button }}
+                {{ if .enable }}
+                  <a href="{{ .link | relLangURL }}" class="btn btn-primary">{{ .label }}</a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  <!-- /Call to Action -->
 
   <!-- Testimonials -->
   {{ with site.GetPage "sections/testimonial" }}

@@ -1,0 +1,100 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <div class="row gy-5 justify-center">
+        <div class="lg:col-5 md:col-6 content">
+          <!-- 联系信息 -->
+          {{ .Content }}
+        </div>
+        <div class="lg:col-5 md:col-6">
+          <div class="rounded-lg bg-white p-6 shadow-lg dark:bg-darkmode-theme-light">
+            <h3 class="h4 mb-6">发送消息</h3>
+            <form
+              class="contact-form"
+              action="{{ site.Params.contact_form_action }}"
+              method="POST">
+              <div class="mb-4">
+                <label class="mb-2 block" for="name">您的姓名 <span class="text-red-500">*</span></label>
+                <input
+                  class="form-input w-full"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="张三"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label class="mb-2 block" for="email">电子邮箱 <span class="text-red-500">*</span></label>
+                <input
+                  class="form-input w-full"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="hello@example.com"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label class="mb-2 block" for="phone">联系电话</label>
+                <input
+                  class="form-input w-full"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="186xxxx1234" />
+              </div>
+              <div class="mb-4">
+                <label class="mb-2 block" for="subject">主题 <span class="text-red-500">*</span></label>
+                <input
+                  class="form-input w-full"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="咨询项目合作"
+                  required />
+              </div>
+              <div class="mb-6">
+                <label class="mb-2 block" for="message">您的留言 <span class="text-red-500">*</span></label>
+                <textarea
+                  class="form-textarea w-full"
+                  name="message"
+                  id="message"
+                  rows="7"
+                  placeholder="请在此输入您的留言..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary block w-full">发送留言</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 地图部分 -->
+  {{ if site.Params.amap.enable }}
+  <section class="section pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="rounded-lg overflow-hidden">
+            <div 
+              id="amap-container" 
+              class="h-[450px] w-full"
+              data-longitude="{{ site.Params.amap.longitude }}"
+              data-latitude="{{ site.Params.amap.latitude }}"
+              data-zoom="{{ site.Params.amap.zoom }}"
+              data-title="{{ site.Params.amap.title }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- 高德地图脚本 -->
+  <script src="https://webapi.amap.com/maps?v=2.0&key={{ site.Params.amap.map_api_key }}"></script>
+  <script src="/js/amap.js"></script>
+  {{ end }}
+{{ end }} 

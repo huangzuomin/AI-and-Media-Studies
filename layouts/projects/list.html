@@ -1,0 +1,99 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <!-- 项目介绍内容 -->
+      {{ with .Content }}
+        <div class="row justify-center mb-10">
+          <div class="md:col-10 lg:col-8 content">
+            {{ . }}
+          </div>
+        </div>
+      {{ end }}
+
+      <!-- 项目类别过滤 (如果有类别) -->
+      {{ $categories := slice }}
+      {{ range .RegularPages }}
+        {{ with .Params.categories }}
+          {{ range . }}
+            {{ $categories = $categories | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ $categories = uniq $categories }}
+      
+      {{ if gt (len $categories) 0 }}
+        <div class="row justify-center mb-8">
+          <div class="md:col-10 text-center">
+            <div class="inline-flex flex-wrap justify-center gap-2 mb-4">
+              <button class="category-filter active px-4 py-2 text-sm font-medium rounded-full border border-primary text-primary bg-primary bg-opacity-10 hover:bg-opacity-20 transition-colors" data-category="all">全部</button>
+              {{ range $categories }}
+                <button class="category-filter px-4 py-2 text-sm font-medium rounded-full border border-gray-200 dark:border-darkmode-border text-text dark:text-darkmode-text hover:border-primary hover:text-primary hover:bg-primary hover:bg-opacity-10 dark:hover:text-primary-light transition-colors" data-category="{{ . }}">{{ . }}</button>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      {{ end }}
+
+      <!-- 项目列表 -->
+      <div class="row">
+        {{ range .RegularPages }}
+          <div class="lg:col-4 md:col-6 mb-8 project-item"
+            {{ with .Params.categories }}
+              data-categories='{{ delimit . "," }}'
+            {{ end }}>
+            {{ partial "components/project-card" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- 类别过滤器的JavaScript -->
+  {{ if gt (len $categories) 0 }}
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.category-filter');
+        const projectItems = document.querySelectorAll('.project-item');
+        
+        // 添加点击事件到每个过滤按钮
+        filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // 移除所有按钮的active状态
+            filterButtons.forEach(btn => {
+              btn.classList.remove('active', 'bg-primary', 'bg-opacity-10', 'text-primary');
+              btn.classList.remove('dark:text-primary-light');
+              if (document.documentElement.classList.contains('dark')) {
+                btn.classList.add('dark:text-darkmode-text');
+              }
+            });
+            
+            // 添加active状态到当前按钮
+            this.classList.add('active', 'bg-primary', 'bg-opacity-10', 'text-primary');
+            if (document.documentElement.classList.contains('dark')) {
+              this.classList.remove('dark:text-darkmode-text');
+              this.classList.add('dark:text-primary-light');
+            }
+            
+            const selectedCategory = this.getAttribute('data-category');
+            
+            // 根据选择的类别显示或隐藏项目
+            projectItems.forEach(item => {
+              if (selectedCategory === 'all') {
+                item.style.display = 'block';
+              } else {
+                const itemCategories = item.getAttribute('data-categories');
+                if (itemCategories && itemCategories.split(',').includes(selectedCategory)) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              }
+            });
+          });
+        });
+      });
+    </script>
+  {{ end }}
+{{ end }} 

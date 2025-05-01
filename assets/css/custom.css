@@ -31,3 +31,146 @@
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* 项目样式 */
+.project-item {
+  transition: all 0.3s ease;
+}
+
+/* 项目过滤按钮 */
+.category-filter {
+  transition: all 0.3s ease;
+}
+
+.category-filter.active {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+}
+
+/* 项目卡片样式增强 */
+.project-item .h4 {
+  transition: color 0.3s ease;
+}
+
+.project-item:hover .h4 {
+  color: var(--color-primary);
+}
+
+/* 暗色模式下的类别和标签 */
+.dark .bg-primary.bg-opacity-20 {
+  background-color: rgba(var(--color-primary-rgb), 0.2);
+}
+
+.dark .text-primary-light {
+  color: var(--color-primary-light, #6cb4ee);
+}
+
+/* 确保暗色模式下标签有足够的对比度 */
+.dark .bg-darkmode-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .text-darkmode-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* 项目详情页样式 */
+.content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content ul {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.content ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.content img {
+  border-radius: 0.375rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 目录样式 */
+.sticky.top-6 {
+  /* 调整顶部固定位置，确保导航栏不遮挡 */
+  top: 100px !important; /* 根据导航栏高度调整 */
+  z-index: 10;
+}
+
+/* 目录容器样式优化 */
+.toc-container {
+  background-color: #f8f9fa !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #eaeaea !important;
+}
+
+.dark .toc-container {
+  background-color: #2d3748 !important;
+  border-color: #4a5568 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 目录标题样式 */
+.toc-container h5 {
+  font-weight: 600 !important;
+  color: #333 !important;
+  padding-bottom: 8px !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+  margin-bottom: 12px !important;
+}
+
+.dark .toc-container h5 {
+  color: #e2e8f0 !important;
+  border-color: #4a5568 !important;
+}
+
+/* 目录链接样式优化 */
+.toc-wrapper a {
+  padding: 4px 0 !important;
+  color: #4a5568 !important;
+  border-radius: 4px !important;
+  font-size: 0.9rem !important;
+}
+
+.toc-wrapper a:hover {
+  color: var(--color-primary) !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.dark .toc-wrapper a {
+  color: #e2e8f0 !important;
+}
+
+.dark .toc-wrapper a:hover {
+  color: var(--color-primary-light) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 适应不同屏幕大小 */
+@media (max-width: 991px) {
+  .sticky.top-6 {
+    position: static !important;
+  }
+}

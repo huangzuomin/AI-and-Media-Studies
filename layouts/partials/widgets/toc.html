@@ -1,0 +1,67 @@
+<!-- Table of Contents 小部件 -->
+<div class="bg-light dark:bg-darkmode-light rounded p-6 mb-8 toc-container">
+  <h5 class="mb-4">目录</h5>
+  <div class="toc-wrapper">
+    <style>
+      .toc-container {
+        max-height: calc(100vh - 150px);
+        overflow-y: auto;
+        padding: 1.25rem !important;
+      }
+      .toc-wrapper nav {
+        padding-right: 5px;
+      }
+      .toc-wrapper ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .toc-wrapper ul ul {
+        padding-left: 1.25rem;
+        margin-top: 0.5rem;
+        border-left: 2px solid rgba(0,0,0,0.08);
+      }
+      .dark .toc-wrapper ul ul {
+        border-left-color: rgba(255,255,255,0.1);
+      }
+      .toc-wrapper li {
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+      }
+      .toc-wrapper a {
+        color: var(--color-text);
+        text-decoration: none;
+        font-size: 0.95rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+        padding-left: 5px;
+        width: 100%;
+      }
+      .toc-wrapper a:hover {
+        color: var(--color-primary);
+        transform: translateX(3px);
+      }
+      .dark .toc-wrapper a {
+        color: var(--color-darkmode-text);
+      }
+      .dark .toc-wrapper a:hover {
+        color: var(--color-primary-light);
+      }
+      /* 滚动条样式 */
+      .toc-container::-webkit-scrollbar {
+        width: 4px;
+      }
+      .toc-container::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.05);
+        border-radius: 10px;
+      }
+      .toc-container::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.2);
+        border-radius: 10px;
+      }
+      .dark .toc-container::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.2);
+      }
+    </style>
+    {{ . }}
+  </div>
+</div> 

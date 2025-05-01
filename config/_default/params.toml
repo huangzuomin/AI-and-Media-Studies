@@ -20,7 +20,7 @@ theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
-contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
+contact_form_action = "https://formspree.io/f/yourformid" # 替换为您的formspree表单ID或其他表单处理服务
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
@@ -95,13 +95,14 @@ js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
 sidebar = ["categories", "tags"]
 
 
-# google map
-[google_map]
-enable = false
-map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
+# 高德地图配置
+[amap]
+enable = true
+map_api_key = "YOUR_AMAP_KEY" # 替换为您的高德地图API密钥
+latitude = "39.9763336"  # 北京坐标（纬度）
+longitude = "116.3371854" # 北京坐标（经度）
+zoom = 15
+title = "我们的位置"
 
 
 # Subscription
@@ -111,7 +112,3 @@ enable = false
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
 mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
 
-
-[pwa]
-enable = true
-manifest = "/manifest.webmanifest"
