@@ -1,0 +1,49 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section">
+    <div class="container">
+      <!-- 研究方向介绍 -->
+      <div class="row mb-10">
+        <div class="lg:col-10 mx-auto">
+          <div class="content">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- 研究论文列表 -->
+        <div class="col-12">
+          <h2 class="h3 mb-6">最新研究论文</h2>
+        </div>
+        {{ $paginator := .Paginate .RegularPages }}
+        {{ range $paginator.Pages }}
+        <div class="md:col-6 lg:col-4 mb-8">
+          <div class="bg-body rounded-lg shadow-md h-full">
+            {{ if .Params.image }}
+            <div>
+              <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-t-lg w-full h-48 object-cover">
+            </div>
+            {{ end }}
+            <div class="p-5">
+              <h3 class="h5 mb-3">
+                <a href="{{ .RelPermalink }}" class="block hover:text-primary">{{ .Title }}</a>
+              </h3>
+              <div class="mb-3">
+                {{ range .Params.authors }}
+                <span class="inline-block bg-light dark:bg-darkmode-light rounded-full px-3 py-1 text-sm mr-2 mb-2">{{ . }}</span>
+                {{ end }}
+              </div>
+              <p class="text-sm text-text-dark dark:text-white mb-3">发表于：{{ .Params.publication }} ({{ .Params.year }})</p>
+              <p class="mb-4">{{ .Description | truncate 120 }}</p>
+              <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">阅读详情</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ partial "components/pagination.html" . }}
+    </div>
+  </section>
+{{ end }} 

@@ -1,0 +1,24 @@
+<!-- 最近博客文章部分 -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+        <h2 class="mb-4">最新文章</h2>
+        <p>探索媒体与AI领域的最新见解和研究成果</p>
+      </div>
+    </div>
+    <div class="row">
+      {{ $paginator := where site.RegularPages "Type" "in" site.Params.mainSections | first 3 }}
+      {{ range $paginator }}
+      <div class="lg:col-4 md:col-6 mb-14">
+        {{ partial "components/blog-card" . }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      <div class="mx-auto text-center">
+        <a href="{{ `blog` | relLangURL }}" class="btn btn-primary">查看所有文章</a>
+      </div>
+    </div>
+  </div>
+</section> 

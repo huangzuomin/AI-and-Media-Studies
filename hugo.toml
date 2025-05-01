@@ -2,7 +2,7 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "/"
 # Title of your website (required).
-title = "[你的名字]：媒体与 AI 创新研究与实践平台"
+title = "黄作敏：媒体与 AI 创新研究与实践平台"
 # Your theme name
 theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -21,15 +21,15 @@ defaultContentLanguageInSubdir = true # <-- 设置为 true
 # 定义网站支持的语言
 [languages]
   [languages.en]
-    title = "[Your Name]: Media & AI Innovation Research and Practice Platform" # 英文标题
+    title = "Huangzuomin： Media & AI Innovation Research and Practice Platform" # 英文标题
     languageName = "English"
     contentDir = "content/en" # 英文内容目录
-    weight = 1 # 排序权重
+    weight = 2 # 排序权重
   [languages.zh]
-    title = "[你的名字]：媒体与 AI 创新研究与实践平台" # 中文标题
+    title = "黄作敏：媒体与 AI 创新研究与实践平台" # 中文标题
     languageName = "简体中文"
     contentDir = "content/zh" # 中文内容目录
-    weight = 2 # 排序权重
+    weight = 21 # 排序权重
     hasCJKLanguage = true # 明确指定中文需要 CJK 支持
 
 ########################## Taxonomies ############################
