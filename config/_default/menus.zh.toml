@@ -1,0 +1,43 @@
+############# Chinese navigation ##############
+
+# 主导航菜单 (main menu)
+# name: 显示在菜单上的文字
+# url: 链接的目标地址。注意使用 /zh/ 前缀指向中文页面
+# weight: 菜单项的排序权重，数字越小越靠前
+
+[[main]]
+  name = "首页"
+  url = "/zh/"
+  weight = 1
+
+[[main]]
+  name = "关于我"
+  url = "/zh/about/"
+  weight = 2
+
+[[main]]
+  name = "研究成果"
+  url = "/zh/research/"
+  weight = 3
+
+[[main]]
+  name = "项目案例"
+  url = "/zh/projects/"
+  weight = 4
+
+# 新增博客菜单项
+[[main]]
+  name = "博客"
+  url = "/zh/blog/"
+  weight = 5 # 确保 weight 值是唯一的，并按你希望的顺序排列
+
+# 页脚菜单 (footer menu) - 如果你的主题页脚也使用了菜单
+# [[footer]]
+#   name = "关于我"
+#   url = "/zh/about/"
+#   weight = 1
+
+# [[footer]]
+#   name = "隐私政策" # 示例，你需要创建对应的页面
+#   url = "/zh/privacy-policy/"
+#   weight = 2

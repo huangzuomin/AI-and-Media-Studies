@@ -1,0 +1,14 @@
+################ Chinese language ##################
+# 添加或修改中文配置块
+[zh]
+languageName = "中文" # 语言显示名称
+languageCode = "zh-cn" # 语言代码
+contentDir = "content/zh" # 中文内容目录
+weight = 1 # 将中文的 weight 设置为 1 (最低，因此是默认)
+
+################ English language ##################
+[en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 2 # 将英文的 weight 设置为 2 (或其他比中文大的数字)
