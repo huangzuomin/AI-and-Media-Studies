@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "e93b3d1fb8edcba6",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8f69a1f8ea87fcb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbf948f4e583bf62",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/zh/research/ai-reshaping-media.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "ai-reshaping-media"
+            }
+          },
+          {
+            "id": "4ba26aff4444c246",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/zh/research/ai-reshaping-media.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "ai-reshaping-media"
+            }
+          },
+          {
+            "id": "12d06e24e96db749",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/zh/_index.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2bdcf57e73e0c905",
+    "type": "split",
+    "children": [
+      {
+        "id": "e988ac1fa1d2443d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0af0b8ec9cbde14a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "24d023179c5c7541",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e7b1c44eb63ccd38",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ff7ad75160ff9030",
+    "type": "split",
+    "children": [
+      {
+        "id": "04ab164c04f0e5ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33cf4bba794e893c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "readme 的反向链接列表"
+            }
+          },
+          {
+            "id": "f44e5991e47d8cd1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "readme.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "readme 的出链列表"
+            }
+          },
+          {
+            "id": "83dc96c84ae22d0d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "7f29639ebf0090ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "readme.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "readme 的大纲"
+            }
+          },
+          {
+            "id": "2a4b89991718b2a6",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 393.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "12d06e24e96db749",
+  "lastOpenFiles": [
+    "content/zh/projects/_index.md",
+    "content/zh/projects.md",
+    "content/zh/projects/project-1.md",
+    "content/zh/projects/project-2.md",
+    "content/zh/_index.md",
+    "public/images/reacher_hu_aaeb8ffb34db93d8.png",
+    "public/images/reacher_hu_bbbd3e021e22c0da.webp",
+    "public/images/reacher_hu_5fba303f39dd09f7.webp",
+    "public/images/reacher_hu_e44032b2246cece2.webp",
+    "public/images/reacher_hu_9014c026c8c2af21.webp",
+    "resources/_gen/images/images/reacher_hu_1b635d55a29f755d.png",
+    "resources/_gen/images/images/reacher_hu_14d409ad77fe5507.png",
+    "resources/_gen/images/images/reacher_hu_9014c026c8c2af21.webp",
+    "resources/_gen/images/images/reacher_hu_e44032b2246cece2.webp",
+    "resources/_gen/images/images/reacher_hu_5fba303f39dd09f7.webp",
+    "content/zh/research/_index.md",
+    "content/zh/research/paper-2.md",
+    "assets/images/jimeng-2025-05-02-159-一张极简线描风格插画，像艺术家的杰作，纯白背景，留白充足，极少、干净、精确的单色线条。__抽象艺术__表现探索笔记概念，融入禅意、思想、未来及媒体AI实践的....jpeg.crdownload",
+    "assets/images/ac689b9e-3983-41fa-b1b6-3651737cbaf9.tmp",
+    "content/zh/research/ai-reshaping-media.md",
+    "public/zh/research/ai-reshaping-media/index.html",
+    "public/zh/research/ai-reshaping-media",
+    "public/zh/tags/信息生态/index.xml",
+    "public/zh/tags/信息生态/index.html",
+    "public/zh/tags/信息生态",
+    "public/zh/tags/ai与媒体/index.xml",
+    "public/zh/tags/ai与媒体/index.html",
+    "public/zh/tags/ai与媒体",
+    "content/zh/about/_index.md",
+    "readme.md",
+    "content/zh/blog/2025-05-02.md",
+    "content/zh/blog/Untitled.md",
+    "copilot-custom-prompts/YAML Frontmatter.md",
+    "docs/WEBSITE-GUIDE.md"
+  ]
+}

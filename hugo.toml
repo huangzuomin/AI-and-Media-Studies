@@ -10,10 +10,10 @@ timeZone = "Asia/Shanghai" # <-- 建议修改为中国时区
 # post excerpt
 summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # disable language
-# disableLanguages = [] # <-- 注释掉或删除此行
+disableLanguages = ["en"] # Disable English temporarily while Chinese version is being stabilized
 hasCJKLanguage = true # <-- 设置为 true 以支持中日韩语言
 # default language
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'zh' # Change to Chinese as default
 # defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
 defaultContentLanguageInSubdir = true # <-- 设置为 true
 

@@ -1,0 +1,21 @@
+// 请将此代码添加到您的主 SCSS 文件中，例如 assets/scss/style.scss
+
+// 基础导航栏样式（确保有 transition 以便平滑动画）
+.header {
+  transition: transform 0.3s ease-in-out;
+  // ... 其他现有样式 ...
+}
+
+// 用于隐藏导航栏的类
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+// 注意：您可能希望这个行为只在移动端生效
+// 可以使用媒体查询包裹 .header-hidden 的定义，例如：
+// @media (max-width: 1023px) { // lg 断点通常是 1024px
+//   .header-hidden {
+//     transform: translateY(-100%);
+//   }
+// }
+// 或者在 JavaScript 中判断屏幕宽度

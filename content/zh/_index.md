@@ -6,8 +6,8 @@ title: "黄作敏：媒体与 AI 创新研究与实践平台"
 
 # 首页 Banner 部分的内容
 banner:
-  title: "媒体 AI 实践与应用"
-  content: "在这里，我分享在一线探索人工智能在媒体中的实际运用，深度解析典型**案例**、实用**工具**和优化**工作流**。"
+  title: "当媒体遇见AI：我的跨界思考与实践"
+  content: "从工具应用到流程再造，从内容实验到理论思考，如何让AI真正服务于内容创作与传播？这里是我在AI赋能媒体之路上的全纪录，分享我从实践中提炼的有效方法、典型案例解析，以及优化工作流的探索经验。"
   image: "jimeng-2025-04-16-556.jpeg" # 使用assets/images文件夹中的图片
   button:
     enable: true
@@ -16,40 +16,29 @@ banner:
 
 # 特性/功能点 部分的内容 (可以有多个)
 features:
-  - title: "前沿研究与论文"
-    content: "深入探讨 AI 在新闻聚合、内容生成和信息传播中的应用与挑战。"
+  - title: "探索笔记"
+    content: "技术浪潮奔涌，作为一名媒体从业者，总有些观察与想法不吐不快。本版块汇集了我对AI赋能媒体的探索足迹，有付梓成文的阶段性成果，亦有散落在实践路上的思考火花。期待与您在此相遇。"
     bulletpoints:
-      - "已发表的学术论文"
-      - "进行中的研究项目"
-      - "会议演讲与报告"
-    image: "/images/service-1.png"
+      - "已发表的期刊文章"
+      - "未发表的独立思考"      
+    image: "/images/reacher.png"
     button:
       enable: true
-      label: "查看研究成果"
+      label: "进入阅读"
       link: "/zh/research" # 链接到"研究"页面
-  - title: "创新项目实践"
-    content: "展示将 AI 技术应用于媒体行业的具体案例和原型系统。"
+  - title: "创新实验室：我的媒体AI应用探索"
+    content: "从一个想法到具体落地，这里汇集了我运用AI技术解决媒体实际问题、进行内容创新的项目案例与原型。"
     image: "/images/feature-2.png" # 替换为你的图片路径
     bulletpoints:
-      - "智能内容推荐系统"
-      - "自动化新闻写作工具"
-      - "媒体数据分析平台"
+      - "AI视频内容生产"
+      - "人机协同深度报道"
+      - "对话式信息服务"
     image: "/images/jimeng-2025-05-01-550.jpeg"
     button:
       enable: true
       label: "浏览项目案例"
       link: "/zh/projects" # 链接到"项目"页面
-  - title: "案例"
-    content: "展示将 AI 技术应用于媒体行业的具体案例和原型系统。"
-    image: "/images/feature-2.png" # 替换为你的图片路径
-    bulletpoints:
-      - "智能内容推荐系统"
-      - "自动化新闻写作工具"
-      - "媒体数据分析平台"
-    button:
-      enable: true
-      label: "浏览项目案例"
-      link: "/zh/projects" # 链接到"项目"页面
+
 --- # <-- 在这里添加结束分隔符
 
 # 下面的 Markdown 内容将不会被 index.html 布局直接显示

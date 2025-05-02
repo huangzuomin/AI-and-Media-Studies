@@ -1,21 +1,25 @@
 <!-- 最近博客文章部分 -->
-<section class="section">
+<section class="section recent-posts bg-gradient-to-b from-gray-50 to-white dark:from-darkmode-body dark:to-darkmode-body">
   <div class="container">
     <div class="row">
       <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
-        <h3 class="mb-4">最新文章</h3>
-        <p>探索媒体与AI领域的最新见解和研究成果</p>
+        <h2 class="mb-4 text-3xl font-bold">最新文章</h2>
+        <p class="text-lg">探索媒体与AI领域的最新见解和研究成果</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row gy-5">
       {{ $paginator := where site.RegularPages "Type" "in" site.Params.mainSections | first 3 }}
       {{ range $paginator }}
-      <div class="lg:col-4 md:col-6 mb-14">
-        {{ partial "components/blog-card" . }}
+      <div class="lg:col-4 md:col-6">
+        <div class="card h-full transform transition duration-300 hover:scale-[1.01] hover:shadow-lg">
+          <div class="card-body bg-white dark:bg-darkmode-theme-light rounded-lg shadow overflow-hidden h-full flex flex-col">
+            {{ partial "components/blog-card" . }}
+          </div>
+        </div>
       </div>
       {{ end }}
     </div>
-    <div class="row">
+    <div class="row mt-12">
       <div class="mx-auto text-center">
         <a href="{{ `blog` | relLangURL }}" class="btn btn-primary">查看所有文章</a>
       </div>

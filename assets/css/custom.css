@@ -32,6 +32,17 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* 导航栏滚动隐藏 - 优化移动和桌面体验 */
+.nav-transition {
+  transition: transform 0.3s ease;
+  will-change: transform;
+  z-index: 1000;
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
 /* 项目样式 */
 .project-item {
   transition: all 0.3s ease;
@@ -76,22 +87,37 @@
 }
 
 /* 项目详情页样式 */
-.content h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+.content {
+  color: #374151;  /* 深灰色文字 */
+  line-height: 1.7;
 }
 
-.content h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  font-size: 1.25rem;
-  font-weight: 600;
+.dark .content {
+  color: #d1d5db;  /* 暗模式下的浅灰色文字 */
 }
 
 .content p {
+  margin-bottom: 1.5rem;
+}
+
+.content h2 {
+  color: #1f2937;
+  margin-top: 2rem;
   margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.content h3, .content h4 {
+  color: #1f2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.dark .content h2, 
+.dark .content h3, 
+.dark .content h4 {
+  color: #f3f4f6;
 }
 
 .content ul {
@@ -116,6 +142,11 @@
   /* 调整顶部固定位置，确保导航栏不遮挡 */
   top: 100px !important; /* 根据导航栏高度调整 */
   z-index: 10;
+}
+
+/* 导航栏隐藏时调整目录位置 */
+.nav-hidden ~ main .sticky.top-6 {
+  top: 20px !important;
 }
 
 /* 目录容器样式优化 */
@@ -173,4 +204,124 @@
   .sticky.top-6 {
     position: static !important;
   }
+}
+
+/* 博客文章卡片样式 */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  overflow: hidden;
+  max-height: 200px;
+}
+
+.card-img-top img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top img {
+  transform: scale(1.05);
+}
+
+.dark .card-body {
+  background-color: var(--color-darkmode-theme-light);
+}
+
+/* 最新文章区块样式 */
+.section.recent-posts {
+  background: linear-gradient(to bottom, rgba(var(--color-primary-rgb), 0.05), transparent);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.dark .section.recent-posts {
+  background: linear-gradient(to bottom, rgba(var(--color-primary-rgb), 0.05), transparent);
+}
+
+/* 为桌面端添加阴影，增强视觉层次感 */
+@media (min-width: 992px) {
+  .header {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .header.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .dark .header {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark .header.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* 标签和分享区域样式增强 */
+.share-icons {
+  display: flex;
+  align-items: center;
+}
+
+.share-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: #4b5563;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+}
+
+.dark .share-icons a {
+  color: #d1d5db;
+  background-color: #374151;
+}
+
+.share-icons a:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+/* 确保博客文章中的文本颜色 */
+article p, 
+article li, 
+article td {
+  color: #4b5563 !important;
+}
+
+.dark article p, 
+.dark article li, 
+.dark article td {
+  color: #d1d5db !important;
+}
+
+/* 增强 Tag 样式 */
+article h5 {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.dark article h5 {
+  color: #f9fafb;
 }

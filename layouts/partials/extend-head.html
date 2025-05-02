@@ -1,0 +1,13 @@
+<!-- 导航栏滚动隐藏脚本 -->
+{{ $hideNavOnScroll := resources.Get "js/hideNavOnScroll.js" }}
+
+{{ if hugo.IsProduction }}
+  {{ $hideNavOnScroll = $hideNavOnScroll | minify | fingerprint }}
+  <script 
+    src="{{ $hideNavOnScroll.RelPermalink }}" 
+    integrity="{{ $hideNavOnScroll.Data.Integrity }}" 
+    crossorigin="anonymous" 
+    defer></script>
+{{ else }}
+  <script src="{{ $hideNavOnScroll.RelPermalink }}" defer></script>
+{{ end }} 

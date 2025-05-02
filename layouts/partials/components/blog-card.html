@@ -1,0 +1,23 @@
+{{ $image:= .Params.image }}
+{{ if $image }}
+  <div class="card-img-top rounded-t-lg overflow-hidden">
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-48 object-cover transition duration-300 hover:scale-105") }}
+  </div>
+{{ end }}
+<div class="p-5 flex flex-col flex-grow">
+  <h4 class="mb-3 text-xl font-bold hover:text-primary transition duration-300">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h4>
+  <div class="mb-3 flex items-center text-sm">
+    <div class="text-gray-500 dark:text-gray-400">
+      <i class="fa-regular fa-calendar mr-1"></i>
+      {{ .PublishDate.Format "2006-01-02" }}
+    </div>
+  </div>
+  <p class="mb-4 flex-grow text-gray-700 dark:text-gray-300">{{ .Summary | plainify | truncate 120 }}</p>
+  <a class="btn btn-outline-primary btn-sm self-start mt-auto" href="{{ .RelPermalink }}">
+    {{ T "read_more" }}
+  </a>
+</div> 
