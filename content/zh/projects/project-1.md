@@ -1,16 +1,25 @@
 ---
-title: "智能内容推荐引擎"
+title: 智能内容推荐引擎
 date: 2025-02-10T10:00:00+08:00
-description: "基于用户行为和内容特征的多模态智能推荐系统，为媒体平台提供个性化内容分发解决方案。"
-image: "/images/projects/project-1.jpg"
-categories: ["算法", "内容分发"]
-tags: ["推荐系统", "机器学习", "个性化"]
-status: "已完成"
-client: "某省级融媒体中心"
-duration: "6个月"
-website: "https://example.com/recommender"
-tech_stack: ["Python", "TensorFlow", "Elasticsearch", "Vue.js"]
-draft: false
+description: 基于用户行为和内容特征的多模态智能推荐系统，为媒体平台提供个性化内容分发解决方案。
+image: /images/projects/project-1.jpg
+categories:
+  - 算法
+  - 内容分发
+tags:
+  - 推荐系统
+  - 机器学习
+  - 个性化
+status: 已完成
+client: 某省级融媒体中心
+duration: 6个月
+website: https://example.com/recommender
+tech_stack:
+  - Python
+  - TensorFlow
+  - Elasticsearch
+  - Vue.js
+draft: true
 ---
 
 ## 项目概述

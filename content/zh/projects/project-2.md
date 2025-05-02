@@ -1,16 +1,24 @@
 ---
-title: "AI辅助新闻写作平台"
+title: AI辅助新闻写作平台
 date: 2024-12-05T10:00:00+08:00
-description: "集成智能采编、辅助写作和内容优化功能的新一代新闻生产工具，提升媒体生产效率和内容质量。"
-image: "/images/projects/project-2.jpg"
-categories: ["内容生成", "媒体工具"]
-tags: ["AI写作", "新闻生产", "编辑工具"]
-status: "进行中"
-client: "某都市报媒体集团"
-# duration: "9个月"
-website: "https://example.com/ai-writing"
-tech_stack: ["GPT-4", "React", "Node.js", "PostgreSQL"]
-draft: false
+description: 集成智能采编、辅助写作和内容优化功能的新一代新闻生产工具，提升媒体生产效率和内容质量。
+image: /images/projects/project-2.jpg
+categories:
+  - 内容生成
+  - 媒体工具
+tags:
+  - AI写作
+  - 新闻生产
+  - 编辑工具
+status: 进行中
+client: 某都市报媒体集团
+website: https://example.com/ai-writing
+tech_stack:
+  - GPT-4
+  - React
+  - Node.js
+  - PostgreSQL
+draft: true
 ---
 
 ## 项目概述

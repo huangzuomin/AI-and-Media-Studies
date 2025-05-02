@@ -33,9 +33,9 @@ features:
       - "AI视频内容生产"
       - "人机协同深度报道"
       - "对话式信息服务"
-    image: "/images/jimeng-2025-05-01-550.jpeg"
+    image: "/images/jimeng-2025-05-02-25-.jpeg"
     button:
-      enable: true
+      enable: false
       label: "浏览项目案例"
       link: "/zh/projects" # 链接到"项目"页面
 

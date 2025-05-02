@@ -1,0 +1,31 @@
+<!-- categories -->
+{{ if isset site.Taxonomies "categories" }}
+  {{ if not (eq (len site.Taxonomies.categories) 0) }}
+    <div class="mb-8">
+      <h5 class="sidebar-widget-title">{{ T "categories" }}</h5>
+      <div class="bg-light dark:bg-darkmode-light rounded p-8">
+        <ul class="space-y-4">
+          {{ $categories := sort site.Taxonomies.categories "Count" "desc" }}
+          {{ range first 10 $categories }}
+            <li>
+              <a
+                class="hover:text-primary dark:hover:text-darkmode-primary {{ if (and (eq $.Page.Kind `term`) (eq $.Page.Type `categories`) (eq $.Page.Title .Page.Title)) }}
+                  active
+                {{ end }} flex justify-between"
+                href="{{ .Page.RelPermalink }}">
+                {{ .Page.Title }} <span>( {{ .Count }} )</span>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+        {{ if gt (len site.Taxonomies.categories) 10 }}
+          <div class="mt-6 text-center">
+            <a href="{{ `categories` | relLangURL }}" class="btn btn-sm btn-outline-primary">
+              查看更多分类
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+{{ end }} 

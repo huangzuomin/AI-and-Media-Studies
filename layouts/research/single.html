@@ -1,82 +1,106 @@
 {{ define "main" }}
   <section class="section pt-7">
     <div class="container">
-      <div class="row justify-center">
-        <article class="lg:col-10">
-          {{ if .Params.image }}
-            <div class="mb-10">
-              <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-full rounded">
-            </div>
-          {{ end }}
-          <h1 class="h2 mb-4">
-            {{ .Title }}
-          </h1>
-          
-          <!-- 论文元数据 -->
-          <div class="bg-light dark:bg-darkmode-light p-6 rounded-lg mb-8">
-            <div class="flex flex-wrap gap-4">
-              <div class="flex-1 min-w-[200px]">
-                <h5 class="mb-2">作者</h5>
-                <div class="flex flex-wrap gap-2">
-                  {{ range .Params.authors }}
-                    <span class="inline-block bg-white dark:bg-darkmode-body rounded-full px-3 py-1 text-sm">{{ . }}</span>
-                  {{ end }}
-                </div>
-              </div>
-              <div class="flex-1 min-w-[200px]">
-                <h5 class="mb-2">发表于</h5>
-                <p>{{ .Params.publication }} ({{ .Params.year }})</p>
-                {{ if .Params.publication_url }}
-                  <a href="{{ .Params.publication_url }}" class="text-primary text-sm" target="_blank">访问期刊网站</a>
-                {{ end }}
-              </div>
-              <div class="flex-1 min-w-[200px]">
-                <h5 class="mb-2">研究领域</h5>
-                <div class="flex flex-wrap gap-2">
-                  {{ range .Params.categories }}
-                    <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="inline-block bg-primary text-white rounded-full px-3 py-1 text-sm">{{ . }}</a>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="content mb-10">
-            {{ .Content }}
-          </div>
-          
-          <!-- 标签 -->
-          <div class="row items-start justify-between">
-            {{ $tags := .Params.tags }}
-            {{ if $tags }}
-              <div class="flex items-center flex-wrap gap-2 mb-6">
-                <h5 class="mr-2">关键词:</h5>
-                {{ range $tags }}
-                  <a class="bg-light hover:bg-primary dark:bg-darkmode-light dark:hover:bg-darkmode-primary dark:hover:text-text-dark rounded px-3 py-1 hover:text-white" href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">{{ . }}</a>
-                {{ end }}
+      <div class="row">
+        <!-- 主内容区 -->
+        <div class="lg:col-8">
+          <article class="research-content">
+            {{ if .Params.image }}
+              <div class="mb-10">
+                <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-full rounded">
               </div>
             {{ end }}
-          </div>
-        </article>
+            <h1 class="h2 mb-4 text-dark dark:text-white">
+              {{ .Title }}
+            </h1>
+            
+            <!-- 论文元数据 -->
+            <div class="bg-light dark:bg-darkmode-light p-6 rounded-lg mb-8">
+              <div class="flex flex-wrap gap-4">
+                <div class="flex-1 min-w-[200px]">
+                  <h5 class="mb-2">作者</h5>
+                  <div class="flex flex-wrap gap-2">
+                    {{ range .Params.authors }}
+                      <span class="inline-block bg-white dark:bg-darkmode-body rounded-full px-3 py-1 text-sm">{{ . }}</span>
+                    {{ end }}
+                  </div>
+                </div>
+                <div class="flex-1 min-w-[200px]">
+                  <h5 class="mb-2">发表于</h5>
+                  <p>{{ .Params.publication }} ({{ .Params.year }})</p>
+                  {{ if .Params.publication_url }}
+                    <a href="{{ .Params.publication_url }}" class="text-primary text-sm" target="_blank">访问期刊网站</a>
+                  {{ end }}
+                </div>
+                <div class="flex-1 min-w-[200px]">
+                  <h5 class="mb-2">研究领域</h5>
+                  <div class="flex flex-wrap gap-2">
+                    {{ range .Params.categories }}
+                      <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="inline-block bg-primary text-white rounded-full px-3 py-1 text-sm">{{ . }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content mb-10 text-gray-700 dark:text-gray-300">
+              {{ .Content }}
+            </div>
+            
+            <!-- 标签 -->
+            <div class="row items-start justify-between">
+              {{ $tags := .Params.tags }}
+              {{ if $tags }}
+                <div class="flex items-center flex-wrap gap-2 mb-6">
+                  <h5 class="mr-2 text-dark dark:text-white">关键词:</h5>
+                  {{ range $tags }}
+                    <a class="bg-light hover:bg-primary dark:bg-darkmode-light dark:hover:bg-darkmode-primary dark:hover:text-text-dark rounded px-3 py-1 hover:text-white" href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">{{ . }}</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </article>
+        </div>
+
+        <!-- 侧边栏 -->
+        <div class="lg:col-4">
+          <!-- 目录 -->
+          {{ if .TableOfContents }}
+            <div class="sticky top-[80px] z-10">
+              <div class="rounded bg-light px-6 py-5 dark:bg-darkmode-light toc-container shadow-sm">
+                <h5 class="mb-4 text-dark dark:text-white">{{ T "toc" }}</h5>
+                <div class="toc-wrapper">
+                  {{ .TableOfContents }}
+                </div>
+              </div>
+            </div>
+          {{ end }}
+          
+          <!-- 其他侧边栏小部件 -->
+          {{ $widget:= site.Params.widgets.sidebar }}
+          {{ range $widget }}
+            {{ partial (printf "widgets/%s.html" .) (dict "Context" $ "Site" $.Site) }}
+          {{ end }}
+        </div>
       </div>
 
       <!-- 相关研究 -->
       {{ $related := .Site.RegularPages.Related . | first 3 }}
       {{ with $related }}
         <div class="section pb-0">
-          <h2 class="h3 mb-12">相关研究</h2>
+          <h2 class="h3 mb-12 text-dark dark:text-white">相关研究</h2>
           <div class="row">
             {{ range . }}
               <div class="lg:col-4 md:col-6 mb-8">
-                <div class="bg-body rounded-lg shadow-md h-full">
+                <div class="bg-body dark:bg-darkmode-body rounded-lg shadow-md h-full">
                   {{ if .Params.image }}
                     <img src="{{ .Params.image }}" alt="{{ .Title }}" class="rounded-t-lg w-full h-48 object-cover">
                   {{ end }}
                   <div class="p-5">
-                    <h3 class="h5 mb-3">
+                    <h3 class="h5 mb-3 text-dark dark:text-white">
                       <a href="{{ .RelPermalink }}" class="block hover:text-primary">{{ .Title }}</a>
                     </h3>
-                    <p class="mb-4">{{ .Description | truncate 100 }}</p>
+                    <p class="mb-4 text-gray-700 dark:text-gray-300">{{ .Description | truncate 100 }}</p>
                     <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">阅读详情</a>
                   </div>
                 </div>

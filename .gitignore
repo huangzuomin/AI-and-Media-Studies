@@ -4,6 +4,8 @@ Thumbs.db
 .tmp
 .lock
 .sass-cache
+.obsidian/
+obsidian/
 npm-debug.log
 node_modules
 builds

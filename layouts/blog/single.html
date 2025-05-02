@@ -76,8 +76,13 @@
         <div class="lg:col-4">
           <!-- 目录 -->
           {{ if .TableOfContents }}
-            <div class="sticky top-6 pt-6">
-              {{ partial "widgets/toc" .TableOfContents }}
+            <div class="sticky top-[70px] z-10">
+              <div class="rounded bg-light px-6 py-5 dark:bg-darkmode-light toc-container shadow-sm">
+                <h5 class="mb-4 text-dark dark:text-white">{{ T "toc" }}</h5>
+                <div class="toc-wrapper">
+                  {{ .TableOfContents }}
+                </div>
+              </div>
             </div>
           {{ end }}
           
