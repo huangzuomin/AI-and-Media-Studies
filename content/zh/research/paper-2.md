@@ -5,7 +5,7 @@ description: "本研究通过问卷调查和深度访谈，分析了AI生成内�
 image: "/images/research/paper-2.jpg"
 categories: ["论文", "媒体研究"]
 tags: ["生成式AI", "新闻写作", "媒体从业者"]
-authors: ["黄作敏", "张丽", "陈刚"]
+authors: ["黄作敏"]
 publication: "《新闻与传播研究》"
 publication_url: "https://example.com/journal2"
 year: "2024"

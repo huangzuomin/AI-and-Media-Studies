@@ -13,8 +13,6 @@ tags:
   - 可视化分析
 authors:
   - 黄作敏
-  - 林强
-  - 吴芳
 publication: 《数据科学学报》
 publication_url: https://example.com/journal3
 year: "2024"
@@ -54,7 +52,7 @@ draft: false
 - 地市级新闻网站占54.55%
     
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=MjFhODcxMWU2Mzg4N2NjYjE1NzFmOTNmZDFlOTFiMjhfRTZtOU5TTEVqNlRoQXZNWm12enN1OVAyT3VIbDk4UUpfVG9rZW46UkMxOGI2R05yb2hsYll4NG9nYmNFNEs2bjFmXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+![image.png](http://pic.huangzuomin.com/20250503103952097.png)
 
   
 
@@ -69,14 +67,10 @@ draft: false
 - 其他管理人员占16.36%
     
 
-  
+  ![image.png](http://pic.huangzuomin.com/20250503104001162.png)
+
 
   
-
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDM5NjljMDBhZWFmODhjMWQ2YzZjNWM3ZmVjMDQ5ZDhfaUtWU2pRaHNHT2ZkYmtGZFNyS0FvektnUjBFUm5QYnZfVG9rZW46TTJ2dmJtSkFxb1dKODV4UHdOeGNmek1kbkpjXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
-
-  
-
   
 
 #### **主要调研内容**
@@ -125,41 +119,41 @@ draft: false
 
 ### 1.2 **关键发现**
 
-1. **AIGC****在城市新闻网媒中渗透率高但发展不均衡。**65.45%的机构已部署AIGC系统，27.27%正在规划部署，但实际应用深度和效果存在显著差异。
+1. **AIGC在城市新闻网媒中渗透率高但发展不均衡。** 65.45%的机构已部署AIGC系统，27.27%正在规划部署，但实际应用深度和效果存在显著差异。
     
-2. **AI** **技术部署呈现多元化趋势，自主研发与平台应用并存。**81.82% 的机构使用第三方平台，但也由不少机构开展自主研发，或进行定制化合作开发，体现了对技术自主性和应用效率的双重追求**。**
+2. **AI技术部署呈现多元化趋势，自主研发与平台应用并存。** 81.82% 的机构使用第三方平台，但也由不少机构开展自主研发，或进行定制化合作开发，体现了对技术自主性和应用效率的双重追求**。**
     
-3. **AIGC****应用主要集中在结构化内容领域。**天气预报(78.18%)、财经数据报告(76.36%)和体育赛事快讯(72.73%)是应用最为成熟的三个领域。
+3. **AIGC应用主要集中在结构化内容领域。** 天气预报(78.18%)、财经数据报告(76.36%)和体育赛事快讯(72.73%)是应用最为成熟的三个领域。
     
-4. **内容生产的智能化程度最高。**90%的机构在内容生产环节应用AI技术，但96.36%仍主要依赖人工审核，显示出技术应用与质量控制的明显失衡。
+4. **内容生产的智能化程度最高。** 90%的机构在内容生产环节应用AI技术，但96.36%仍主要依赖人工审核，显示出技术应用与质量控制的明显失衡。
     
-5. **人才短板已成为制约发展的关键因素。**56.36%的机构AI技能掌握率低于10%，70.91%面临技术人才短缺，69.09%缺乏合适的培训资源。
+5. **人才短板已成为制约发展的关键因素。** 56.36%的机构AI技能掌握率低于10%，70.91%面临技术人才短缺，69.09%缺乏合适的培训资源。
     
-6. **媒体对待****AIGC****态度积极但准备不足。**仅21.82%的机构建立专门质量标准，5.45%制定相关政策规范，显示出制度建设明显滞后于技术应用。
+6. **媒体对待AIGC态度积极但准备不足。** 仅21.82%的机构建立专门质量标准，5.45%制定相关政策规范，显示出制度建设明显滞后于技术应用。
     
-7. **创新实践呈现多元化探索态势。**部分媒体机构已形成特色化应用模式，如佛山新闻网的"飞鸿AI"全流程应用、温州新闻网的本地化AI工具开发等。
+7. **创新实践呈现多元化探索态势。** 部分媒体机构已形成特色化应用模式，如佛山新闻网的"飞鸿AI"全流程应用、温州新闻网的本地化AI工具开发等。
     
-8. **未来投资意向强劲但风险意识增强。**87.27%的机构计划增加投资，但78.18%对技术可靠性表示担忧，70.91%对新闻真实性验证心存疑虑。
+8. **未来投资意向强劲但风险意识增强。** 87.27%的机构计划增加投资，但78.18%对技术可靠性表示担忧，70.91%对新闻真实性验证心存疑虑。
     
-9. **AI****认知水平呈现出明显的集中分布特征**。54.55%的受访者表示"比较了解"，34.55%"一般了解"，7.27%"非常了解"，3.64%"了解不多"，反映出行业整体认知水平仍有待提升。
+9. **AI认知水平呈现出明显的集中分布特征。** 54.55%的受访者表示"比较了解"，34.55%"一般了解"，7.27%"非常了解"，3.64%"了解不多"，反映出行业整体认知水平仍有待提升。
     
-10. **AI****培训体系建设明显不足。**47.27%的机构仅开展1-2次培训，25.45%未开展任何培训。70.91%的机构尚未建立正式的技能评估机制。
+10. **AI培训体系建设明显不足。** 47.27%的机构仅开展1-2次培训，25.45%未开展任何培训。70.91%的机构尚未建立正式的技能评估机制。
     
-11. **AI****教育资源严重匮乏。**69.09%的机构反映缺乏合适的培训资源或讲师，40%完全没有AI学习资源，反映出能力建设的基础支撑不足。
+11. **AI教育资源严重匮乏。** 69.09%的机构反映缺乏合适的培训资源或讲师，40%完全没有AI学习资源，反映出能力建设的基础支撑不足。
     
-12. **AI****培训内容结构失衡。**81.82%的培训集中在基础知识介绍，74.55%为特定工具使用培训，而AI伦理责任(12.73%)、编程基础(12.73%)等深层培训比例极低。
+12. **AI培训内容结构失衡。** 81.82%的培训集中在基础知识介绍，74.55%为特定工具使用培训，而AI伦理责任(12.73%)、编程基础(12.73%)等深层培训比例极低。
     
-13. **AI****应用规范建设滞后。**仅5.45%的机构制定专门政策，29.09%正在制定中，45.45%暂无计划，反映出行业发展缺乏制度保障。
+13. **AI应用规范建设滞后。** 仅5.45%的机构制定专门政策，29.09%正在制定中，45.45%暂无计划，反映出行业发展缺乏制度保障。
     
-14. **AI****审核模式尚未成熟。**96.36%仍以人工审核为主，41.82%采用AI辅助审核，38.18%实现可信数据源集成，显示出智能化质控体系亟待建立。
+14. **AI审核模式尚未成熟。** 96.36%仍以人工审核为主，41.82%采用AI辅助审核，38.18%实现可信数据源集成，显示出智能化质控体系亟待建立。
     
-15. **媒体对****AI****应用前景持乐观态度。**40%认为影响"非常积极"，40%认为"比较积极"，但20%持中立态度，反映出行业对AI的理性认知。
+15. **媒体对AI应用前景持乐观态度。** 40%认为影响"非常积极"，40%认为"比较积极"，但20%持中立态度，反映出行业对AI的理性认知。
     
-16. **AI****应用已产生新的商业价值。**部分机构通过AI数字人、智能创作等开发新产品和服务，探索"AI+"产品新赛道，但商业模式仍在探索中。
+16. **AI应用已产生新的商业价值。** 部分机构通过AI数字人、智能创作等开发新产品和服务，探索"AI+"产品新赛道，但商业模式仍在探索中。
     
-17. **AI****伦理问题日益受到重视。**78.18%的机构对技术可靠性表示担忧，70.91%关注新闻真实性，56.36%重视伦理和版权问题，显示出行业的责任意识在增强。
+17. **AI伦理问题日益受到重视。** 78.18%的机构对技术可靠性表示担忧，70.91%关注新闻真实性，56.36%重视伦理和版权问题，显示出行业的责任意识在增强。
     
-18. **AI****能力要求日趋综合。**100%的受访者认为需要掌握AI工具使用，78.18%强调数据分析能力，67.27%看重跨学科知识，反映出对复合型人才的迫切需求。
+18. **AI能力要求日趋综合。** 100%的受访者认为需要掌握AI工具使用，78.18%强调数据分析能力，67.27%看重跨学科知识，反映出对复合型人才的迫切需求。
     
 
   
@@ -258,9 +252,10 @@ draft: false
 
 调研数据显示，城市新闻网媒对生成式AI的认知水平呈现出明显的集中分布特征：54.55%的受访者表示"比较了解"，占据主要比重；34.55%处于"一般了解"水平，二者合计近90%，构成认知水平的主体；而两端比例相对较小，"非常了解"的占比为7.27%，"了解不多"的仅占3.64%。这种分布格局反映出行业整体已基本形成对AI技术的认知框架，但专业化、深度化的理解仍显不足，特别是精通AI技术的人才比例偏低，这可能制约行业的深度创新发展。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmEzNDIxYWMzMGM3MWVhMDQzY2Q2YzRiNDFhYWFiMTlfNUt4bGViQXJVSjl2ck9tODlaNWZKRGxlaXJ5NlNFNU1fVG9rZW46RDhHeGJ1NUhWb3dDSDR4VmltSWNybXM2bkliXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+ 
 
-  
+  ![image.png](http://pic.huangzuomin.com/20250503104310093.png)
+
 
 #### 一、职位分化：认知的结构性差异
 
@@ -280,7 +275,7 @@ draft: false
 
 **（一）技术认知层面 调研发现**，大多数机构已形成对AI的基本技术认知，将其定义为"可执行人类智能任务的技术系统"。在具体认知要素上，受访者重点强调"自动化"（76%）、"机器学习"（68%）和"算法"（62%）等核心概念。然而，对技术原理的理解深度仍存在明显分层，多数人仍停留在工具使用层面。
 
-**（二）应用认知层面 在应用层面，**机构普遍展现出务实的认知取向：
+**（二）应用认知层面 在应用层面，** 机构普遍展现出务实的认知取向：
 
 1. 83%的受访者将效率提升和流程优化视为AI应用的首要目标
     
@@ -310,9 +305,8 @@ draft: false
 
 调研数据显示，城市新闻网媒的AI技术部署呈现明显的"三分布局"：65.45%的机构已经部署AI系统，27.27%正在规划部署，7.27%暂无部署计划。这一分布格局反映出行业对AI技术的接纳度正在快速提升。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2UyMzFiNjNmZjYyNjZkOTI5MTFkMzNhNGFiMDQxYzdfWFhSeXBFS0x4S1RoY3ZPclpuTTRoUWM3dERoTVk0MXpfVG9rZW46RHExbWJZQ0VtbzBqME94dW1kTWNpYkNKbkRkXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+![image.png](http://pic.huangzuomin.com/20250503104444755.png)
 
-  
 
 **（一）部署模式分析**
 
@@ -337,7 +331,9 @@ draft: false
 
 在现有应用中，内容生产是最主要的部署领域，72.73%的机构在此环节部署智能系统。用户体验优化和新闻业务运营并列第二，均为45.45%。这种分布格局反映出机体机构将AI应用重点聚焦在核心业务环节，尤其是内容生产的智能化转型。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YWFiMDU5MTA0ODczZDA2NDE2MmU2NTQzYmNlMmNlNmZfVTc5MW5Xb2Jsekc5bzNyVXUxVGttZjJ4bU56bnptbHpfVG9rZW46REZmYmJqYnk2b3U2dHZ4cXFKcmN2alY4bkJlXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104454304.png)
+
 
 从具体应用来看，各机构的创新实践丰富多样。如佛山新闻网的"飞鸿AI"整合了AI智校、AI主播、AI视频、AI写作等多元功能；苏州广电总台的星云门户平台实现了"文转图"、"图转视频"的智能转化；温州新闻网开发的"台风AI助手"则针对本地新闻需求提供专门解决方案。
 
@@ -355,9 +351,10 @@ draft: false
 - 广告和营销（32.73%）也开始受到关注
     
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YjlkNjUxMTY3ZjdlNmUzM2Y0MzQyMGFkMzY4NDIzMjFfSHhIRFMxZDJmUlRkOHNqRDg1OXFWTjlGc21sdnBXQVRfVG9rZW46WXVldWJUcndvbzZ5YzZ4MlF5TGNvTVJ0bk9oXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+
+  ![image.png](http://pic.huangzuomin.com/20250503104503435.png)
+
 
 这种部署规划反映出机构正在从单一的内容生产向全流程智能化转型，AI应用的广度和深度都在持续拓展。值得注意的是，新产品或服务开发的高关注度（69.09%）表明机构正积极探索AI赋能下的业务创新。
 
@@ -409,7 +406,8 @@ draft: false
 
 从整体应用格局来看，**城市新闻网媒的****AI****应用已经从最初的内容生产逐步向用户服务和业务创新延伸，形成了多领域协同发展的态势**。未来12个月的发展规划更显示出应用深化的趋势：内容生产领域的应用继续加强（85.45%），新产品开发力度加大（69.09%），用户体验和运营效率持续提升（均超50%）。这种全面而有重点的发展格局，反映出城市新闻网媒正在通过AI技术推动全方位的数字化转型。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=Yjg1YmMyZjAzNzBmOWIyYzZmNjA3NDZkYTU5OTg3YTZfd01DTkZTUHB2MHVCQkF3dFFkZ3ZsUVF5ODk2RW5WdjlfVG9rZW46R0tqM2I4emJZb0k1MWF4VnN5MWNPUVhGblllXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104520394.png)
 
   
 
@@ -431,9 +429,8 @@ draft: false
 
   
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=MjA2ZGYwYjQ2ODNlZWVmNGJmZTA5YWI2MWRmYzk2YjJfRlhhZ3E5RmFrSVBhQlkyRnQweEVuS3lEamxMeldyUzRfVG9rZW46QnpQUmJkd2dPb3FYQXZ4WTJMOGNQdklabmtlXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+![image.png](http://pic.huangzuomin.com/20250503104532326.png)
 
-  
 
   
 
@@ -448,7 +445,8 @@ draft: false
 
 这种分布特征表明，技术挑战已从单纯的工具可靠性，延伸到内容真实性、伦理规范等更深层面的问题，对机构的技术治理能力提出了更高要求。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YWJjOGNlNDJiOGM1ZDc0ZTU0ZTIwZmM1MTNmMzcwZmNfWE92MTdUcGFXWUtDR0ZMNWRRTWFFU3dWckozNFBLM0RfVG9rZW46VXI3cGJiSmtsbzVvQnp4c3dFaWMwUEd6bnViXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104542751.png)
 
   
 
@@ -465,9 +463,10 @@ draft: false
 
 这些多层次的人才挑战，构成了制约AI应用深化的关键瓶颈，需要通过系统化的人才战略来破解。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YTUxOWVmMDI4YWMxOGY1Yzc1MmU2YzY1ZGVkMjNmMTdfNXRWMWFQMjFsNlF1TGNsOWY4SFRnczZQZ1doQlRuMmpfVG9rZW46UjZiQ2I0ZTlvbzV0TG14a2czaGNBYUhObjZkXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+
+![image.png](http://pic.huangzuomin.com/20250503104551902.png)
+
 
 3. **转型适应挑战**
     
@@ -760,7 +759,9 @@ AIGC 生成内容的真实性验证是新闻伦理和价值观的重要体现。
 - **流程机制不完善:** 新闻真实性验证需要一套完善的流程机制保障。调研发现，许多机构在实时监控、追溯体系、纠错机制等方面存在不足，难以对 AIGC 生成内容进行全流程、全方位的监控和管理，一旦出现虚假信息，难以快速有效地进行追溯和纠正。
     
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjA2ODdhYWJkYTkzMDNjMzk5NTlmYWRmZGIzNjU0ZjRfUHc4YWM0Zjg3ekVPWE1KUGFwZW5HWG5YOWYyVVNaTFdfVG9rZW46R0ltNWJyaDYyb1hBaTZ4YzFhVmN3Y1hybmNnXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104620692.png)
+
 
 调研反馈显示，业内对AI在新闻真实性和准确性方面的作用持谨慎态度。多数受访者认为AI应定位为辅助工具，主要用于提升生产效率，但在内容真实性把关方面仍需要专业人员的判断。值得注意的是，AI在数据分析类内容的真实性验证方面表现相对较好，但在其他类型内容上的表现仍有待提高。受访者普遍强调，AI生成内容必须经过人工审核把关，确保新闻内容符合社会公共利益。
 
@@ -772,9 +773,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
 这些技术挑战既反映出AIGC技术本身的发展局限，也体现出媒体机构在技术应用方面面临的实际困难。破解这些难题，需要在技术完善、成本控制、应用创新等方面持续努力。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YzYyM2U3ZjhkYjQ4NmMxNGVkZDI5OGU3ZDhmYzU3NDJfb0ttbkRQUlRtSGx4ZkphSHNRM21mUDFUcTFwQTNTWGtfVG9rZW46RTRwcmJER3ZCb29zN094TXRhWWNDVFZqbkFoXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+  ![image.png](http://pic.huangzuomin.com/20250503104628110.png)
+
 
 ### **3.2 人才队伍挑战**
 
@@ -786,7 +787,8 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
 在人才培养方面，虽然81.82%的机构开展了AI相关的基础培训，但69.09%的机构反映缺乏合适的培训资源或讲师，这种培训资源的匮乏制约了人才培养的效果。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=MmU1MTU1ZDFkODc3NGM3M2Y0ZTE4NGI0MTIyMDI1MmJfTzhXa2lSSVkxMm1DRk5oZkY0OVNtb3FBWXVsV0VlTkZfVG9rZW46SW5FZmI5dnE0b01vUzJ4WWRGV2N2UTdrbktoXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104635048.png)
 
 **3.2.2 能力提升瓶颈**
 
@@ -794,7 +796,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
 在实践应用层面，41.82%的机构采用AI辅助审核，56.36%的机构AI应用深度不足，这表明AI技术在新闻生产中的应用场景和深度都有待拓展，这也限制了人才在实践中提升能力的机会。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjE5ZDY4OTA1MmQ5ZjA0NjdiNGExY2VlYzhiYmM5ZDFfS1BTeHVRcEJXMDVvSDlvYUNLdHp0VXExeVB3Zm9OTFpfVG9rZW46TWVBcmJDekZ5b2dCVGN4a09jM2NJeGdNbkVkXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104642803.png)
+
 
 **3.2.3 认知理解差异**
 
@@ -857,9 +861,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
 这种分布格局反映出制度建设与技术应用之间的明显差距。特别是在内容量快速增长的背景下，96.36%的机构仍主要依赖传统人工审核，凸显出价值规范体系建设的迫切性。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YjY0MzdmMTE3NzQzNWRmZDAxZjA2NmI3MTBiMjU5N2VfVFBWMVFKOU5RQWpsUTh6Sk1mNDZjRlZpMEtRS1BHamhfVG9rZW46UDNHTmJSV0x3b0ozSGh4aFZ5WmNneU1XblFiXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+![image.png](http://pic.huangzuomin.com/20250503104656066.png)
+
 
 **二、AI应用中的规范探索**
 
@@ -925,7 +929,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
       这表明内容把关的制度保障体系尚未形成，亟需加强顶层设计。
     
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjYyZjU5NzQ2YWZjZjU1ODM1ZDMxOWVhNmZkN2U3YTdfMnVURXRsQm52NHJ3VW5Wc1ZGY3hvOFdBSms2cm1aRHNfVG9rZW46WWJHd2JhQ2dlb1h2ZnF4YmdGWGNDNDNwbjJiXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+
+![image.png](http://pic.huangzuomin.com/20250503104706079.png)
+
 
 这些挑战既反映出AI内容把关面临的现实困难，也揭示了未来发展的关键方向。建立既能发挥AI效能又能确保内容质量的把关机制，已成为城市新闻网媒的重要课题。
 
@@ -946,9 +952,10 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 - **用户参与度:** 69.09% 的受访机构将用户参与度（例如页面浏览量、停留时长、评论数等）纳入评估体系，这体现了以用户为中心的运营理念，以及对AI技参与度的期待。
     
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=MTQ2OTk4ZjY4YzY4MTdiOGUzNjcwNjViZGNiOTc1NzhfRGlpM0NLSWg3VEhzOTVkbm5lMWVFOHRqZUVFQUhxdHFfVG9rZW46SllwQ2I2VG5Fb2N4d2F4RXZRVmNmbmRFblJoXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+
+  ![image.png](http://pic.huangzuomin.com/20250503104713451.png)
+
 
 **二、实践挑战与问题**
 
@@ -961,8 +968,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
     3. **内容审核机制不健全:** 过度依赖人工审核 (96.36%)，AI 辅助审核的应用比例较低 (41.82%)，数据源整合程度有限 (38.18%)，难以适应内容快速增长的需求，也无法充分发挥 AI 技术的优势。
         
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=OTJkNzU4ZWY1NmZiMGQ2YTlkY2JlYzEyZjRlYzg1ZjJfempoa2hXV0VTNXdEQjZvcGViS0VLN1Z2YVF3OTVpWXVfVG9rZW46V3lvZmI5U1hmb3Bzcml4UnY2ZGNQbEFzbkJoXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
+
+![image.png](http://pic.huangzuomin.com/20250503104720432.png)
   
 
   
@@ -1005,9 +1013,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 - **保障新闻真实性、客观性和公正性的流程设计：** 在新闻生产流程中，需要设置相应的环节和机制，例如事实核查、多方信源验证、伦理审查等，以保障 AI 生成内容的真实性、客观性和公正性。
     
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWRjYmE2MTAwMjQ3NTk3NjQ4MmE5NzFiMzA1YzMxOGZfbEk5QnhIVDdNVE84TEtjMjV4ZU1JSFl4VXJPQXJZRjJfVG9rZW46TDBUd2J1S2xub0sydmd4emVFVWNQdkhXbkhkXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+
+![image.png](http://pic.huangzuomin.com/20250503104731582.png)
 
 **3.2.3 价值评价：AI 新闻生产的评估与改进机制**
 
@@ -1024,9 +1032,8 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
   
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=OTZhZWVlM2M0OWU4ZjhiM2Y4MGJkOTQ3OTY3MzM4YzdfeVRYeUhkdHNVOXhIM2hSVFVSamNWMWZMMFZrWERUMmpfVG9rZW46R3lCTWJ4VWpWb25pdnF4eGZRZWNMclNvblJjXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
+ ![image.png](http://pic.huangzuomin.com/20250503104739400.png)
 
-  
 
 ### 4.3 AI 价值规范的实践路径
 
@@ -1092,15 +1099,16 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
 **投资规模扩大:** 87.27% 的机构计划在未来增加 AI 投入，其中 49.09% 计划略有增加，38.18% 计划显著增加。这表明城市新闻网媒普遍看好 AI 技术的应用前景，并愿意投入更多资源来推动 AI 转型。这种积极的投资意愿为 AI 技术在新闻行业的深入应用和创新发展提供了重要的保障。 值得关注的是，不同机构的投资力度存在差异，反映出机构规模、发展阶段和战略定位的不同。 显著增加投入的机构可能更倾向于自主研发或深度合作，以期在 AI 领域建立核心竞争力；而略有增加投入的机构则可能更注重 AI 技术的实用性和成本效益，倾向于选择成熟的解决方案或进行渐进式创新。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGNjOTkyOTA4MmY5Zjk3ZTFjYWVmNjFjOTE2Njg3MzBfSW1JcjFoaDB6V2V4c1lpUnlGTzI0QklxaE56WVEyVHZfVG9rZW46SWN1S2JHallwb21BdHp4RnA4N2NGT09UbmxmXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+
+![image.png](http://pic.huangzuomin.com/20250503104753561.png)
+
 
 **应用领域拓展:** 未来 12 个月内，内容创作、新产品/服务和用户体验将成为 AI 技术应用的重点方向。85.45% 的机构计划在内容创作领域加大 AI 应用力度，这表明 AI 技术将更多地参与到新闻采编、制作、分发等环节，例如智能写作、辅助编辑、自动配图、个性化推荐等。69.09% 的机构计划利用 AI 技术开发新产品或服务，例如 AI 驱动的新闻客户端、虚拟主播、智能客服等，以拓展服务范围，提升用户体验。54.55% 的机构计划利用 AI 技术提升用户体验个性化，例如基于用户画像的个性化推荐、智能交互等，以增强用户粘性和满意度。这些重点应用方向的拓展，预示着 AI 技术将与新闻业务深度融合，推动新闻生产方式的变革和服务模式的创新。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=YWU5YjEwZjQwOWMzYTViOGQwYWMzMzExMGRhNTM5OTZfc3BPSGd2TVBzS2hoQ0RVblpBcTdSZ0JLOWhqVWI1YUFfVG9rZW46Vm9URGJ2OVp2b1VpVXF4dmdxWGNhZnNDbmlnXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+![image.png](http://pic.huangzuomin.com/20250503104800844.png)
+
 
 **技术能力提升:** 调研数据显示，城市新闻网媒的 AI 技术能力正在持续提升，主要体现在以下几个方面：72.73% 的机构已将 AI 技术应用于内容生产环节，这表明 AI 技术已经成为新闻生产的重要工具；41.82% 的机构采用 AI 辅助审核，利用 AI 技术提高审核效率和准确性；38.18% 的机构实现可信数据源集成，为 AI 模型训练和应用提供高质量的数据支撑。 这些技术应用的持续深化，表明城市新闻网媒正在积极探索 AI 技术的应用场景和价值，并逐步积累 AI 技术应用的经验和能力。 未来，随着技术的不断成熟和应用的不断深入，AI 技术将在新闻生产中扮演更加重要的角色。
 
@@ -1114,9 +1122,9 @@ AIGC技术的应用深度是影响其效能发挥的重要因素。调研数据�
 
 **内容生产智能化:** 结构化内容因其数据规范、逻辑清晰等特点，成为 AI 技术应用的突破口。天气预报 (78.18%)、财经数据 (76.36%) 和体育赛事 (72.73%) 等结构化内容的智能化生产已初具规模，并将持续推进。AI 技术可以自动采集、处理和生成这些领域的新闻内容，显著提高生产效率，降低人工成本，并减少人为错误。未来，随着自然语言处理等技术的进步，AI 技术将能够处理更复杂的新闻内容，例如，对财经数据进行深度分析和解读，生成更具洞察力的报道。
 
-![](https://ewcgrzr8zz.feishu.cn/space/api/box/stream/download/asynccode/?code=OTk3NjNjODI5N2FiMjhjZTE4NGZhNTE4OTJlMjhlOGVfejc1NVZuM0xvQWo1UTR6VGIzMnM4N1h6N285YjI5NUdfVG9rZW46SFhFdWJHZEdwbzdxS2F4OFlGVGNwMkRobjNnXzE3NDYxOTUwNTQ6MTc0NjE5ODY1NF9WNA)
 
-  
+![image.png](http://pic.huangzuomin.com/20250503104808720.png)
+
 
 **流程再造数字化:** AI技术正在推动新闻生产流程的系统性重构。调研数据显示，72.73%的机构在内容生产环节实现智能化转型，用户体验和业务运营环节的应用率均达到45.45%，呈现出全流程数字化转型态势。
 
