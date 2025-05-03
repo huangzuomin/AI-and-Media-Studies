@@ -26,7 +26,7 @@ tags:
  - "建站手记" # 根据文章内容提炼
 ---
 
-![jimeng-2025-05-02-38-.jpeg](http://pic.huangzuomin.com/jimeng-2025-05-02-38-.jpeg)
+![jimeng-2025-05-02-38-.jpeg](https://pic.huangzuomin.com/jimeng-2025-05-02-38-.jpeg)
 
 
 ### 建站手记：从零到一，打造“温故智新”的数字根据地
