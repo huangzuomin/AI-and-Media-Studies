@@ -41,8 +41,7 @@
     {{ with .Params.categories }}
       <div class="mb-3">
         {{ range first 2 . }}
-          <!-- 更新深色模式下的文本颜色 -->
-          <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-xs dark:bg-primary dark:bg-opacity-20 dark:text-primary-light">{{ . }}</span>
+          <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-xs dark:bg-darkmode-light dark:text-darkmode-text-dark">{{ . }}</span>
         {{ end }}
         {{ if gt (len .) 2 }}
           <span class="inline-block text-xs text-text dark:text-darkmode-text">+{{ sub (len .) 2 }} 更多</span>
@@ -67,7 +66,7 @@
       {{ with .Date }}
         <span class="text-sm text-text dark:text-darkmode-text">{{ .Format "2006年01月" }}</span>
       {{ end }}
-      <a href="{{ .Permalink }}" class="inline-flex items-center text-primary hover:text-primary-dark transition-colors dark:text-primary-light dark:hover:text-primary">
+      <a href="{{ .Permalink }}" class="inline-flex items-center text-primary hover:text-primary-dark transition-colors dark:text-primary-light dark:hover:text-white">
         查看详情
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

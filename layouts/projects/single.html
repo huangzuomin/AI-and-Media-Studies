@@ -27,13 +27,13 @@
         <div class="lg:col-4">
           <div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6 sticky top-24">
             <!-- 项目信息卡片 -->
-            <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border">项目信息</h3>
+            <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">项目信息</h3>
             
             <div class="mb-6">
               <!-- 项目状态 -->
               {{ if .Params.status }}
                 <div class="flex items-center mb-3">
-                  <span class="w-28 font-medium">项目状态:</span>
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">项目状态:</span>
                   <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full
                     {{ if eq .Params.status "已完成" }} bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200
                     {{ else if eq .Params.status "进行中" }} bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200
@@ -47,24 +47,24 @@
               <!-- 项目客户 -->
               {{ with .Params.client }}
                 <div class="flex items-start mb-3">
-                  <span class="w-28 font-medium">客户:</span>
-                  <span>{{ . }}</span>
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">客户:</span>
+                  <span class="text-text dark:text-darkmode-text">{{ . }}</span>
                 </div>
               {{ end }}
               
               <!-- 项目周期 -->
               {{ with .Params.duration }}
                 <div class="flex items-start mb-3">
-                  <span class="w-28 font-medium">项目周期:</span>
-                  <span>{{ . }}</span>
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">项目周期:</span>
+                  <span class="text-text dark:text-darkmode-text">{{ . }}</span>
                 </div>
               {{ end }}
               
               <!-- 项目网站 -->
               {{ with .Params.website }}
                 <div class="flex items-start mb-3">
-                  <span class="w-28 font-medium">项目网站:</span>
-                  <a href="{{ . }}" target="_blank" class="text-primary hover:text-primary-dark hover:underline transition-colors dark:hover:text-primary-light">
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">项目网站:</span>
+                  <a href="{{ . }}" target="_blank" class="text-primary hover:text-primary-dark hover:underline transition-colors dark:text-primary-light dark:hover:text-white">
                     访问网站
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 inline-block ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -76,38 +76,38 @@
               <!-- 项目日期 -->
               {{ with .Date }}
                 <div class="flex items-start mb-3">
-                  <span class="w-28 font-medium">项目日期:</span>
-                  <span>{{ .Format "2006年01月02日" }}</span>
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">项目日期:</span>
+                  <span class="text-text dark:text-darkmode-text">{{ .Format "2006年01月02日" }}</span>
                 </div>
               {{ end }}
             </div>
             
             <!-- 技术栈 -->
             {{ with .Params.tech_stack }}
-              <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border">技术栈</h3>
+              <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">技术栈</h3>
               <div class="mb-6">
                 {{ range . }}
-                  <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-sm dark:text-darkmode-text">{{ . }}</span>
+                  <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-sm text-text-dark dark:text-darkmode-text-dark">{{ . }}</span>
                 {{ end }}
               </div>
             {{ end }}
             
             <!-- 项目类别 -->
             {{ with .Params.categories }}
-              <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border">项目类别</h3>
+              <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">项目类别</h3>
               <div class="mb-6">
                 {{ range . }}
-                  <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-sm dark:bg-primary dark:bg-opacity-20 dark:text-primary-light">{{ . }}</span>
+                  <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-sm dark:bg-darkmode-light dark:text-darkmode-text-dark">{{ . }}</span>
                 {{ end }}
               </div>
             {{ end }}
             
             <!-- 项目标签 -->
             {{ with .Params.tags }}
-              <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border">项目标签</h3>
+              <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">项目标签</h3>
               <div>
                 {{ range . }}
-                  <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-sm dark:text-darkmode-text">{{ . }}</span>
+                  <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-sm text-text-dark dark:text-darkmode-text-dark">{{ . }}</span>
                 {{ end }}
               </div>
             {{ end }}
@@ -119,7 +119,7 @@
       {{ $related := .Site.RegularPages.Related . | first 3 }}
       {{ with $related }}
         <div class="mt-16">
-          <h2 class="h3 mb-8 text-center">相关项目</h2>
+          <h2 class="h3 mb-8 text-center text-text-dark dark:text-darkmode-text-dark">相关项目</h2>
           <div class="row">
             {{ range . }}
               <div class="lg:col-4 md:col-6 mb-8">

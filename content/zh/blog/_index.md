@@ -1,6 +1,6 @@
 ---
 # 页面标题，会显示在博客列表页的顶部和浏览器标签页
-title: "博客文章"
+title: "行思间：捕捉即时灵感"
 # 页面描述，用于 SEO
 description: "分享关于媒体、人工智能、技术实践和个人思考的最新文章。"
 # Hugo 会自动使用主题中的列表布局 (通常是 layouts/blog/list.html 或 layouts/_default/list.html)

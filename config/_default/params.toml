@@ -97,7 +97,7 @@ sidebar = ["categories", "tags"]
 
 # 高德地图配置
 [amap]
-enable = true
+enable = false
 map_api_key = "YOUR_AMAP_KEY" # 替换为您的高德地图API密钥
 latitude = "39.9763336"  # 北京坐标（纬度）
 longitude = "116.3371854" # 北京坐标（经度）
