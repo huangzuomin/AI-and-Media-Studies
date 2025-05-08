@@ -1,27 +1,32 @@
 ---
-title: AI赋能数据叙事：记者如何在数据洪流中找到“宝藏”？
+# 文章标题 (根据内容生成/修改)
+title: "AI赋能数据叙事：记者如何在数据洪流中找到“宝藏”？"
+# 文章发布日期和时间 (保留原值)
 date: 2025-05-08T23:28:22+08:00
-description: 本文探讨了记者在数据分析中遇到的挑战，分析了通用AI和专业工具的局限性，并介绍了一种新的AI工具如何帮助记者从数据中挖掘新闻价值。
-image: /images/projects/project-1.jpg
+# 文章 SEO 描述 (根据内容生成)
+description: "本文探讨了记者在数据分析中遇到的挑战，分析了通用AI和专业工具的局限性，并介绍了一种新的AI工具如何帮助记者从数据中挖掘新闻价值。"
+# 文章列表页摘要 (根据内容生成)
+summary: "《AI赋能数据叙事》专栏开篇，探讨记者如何借助AI进行数据报道。文章分析了通用大语言模型在数据分析中的不足，以及专业工具的学习门槛，介绍了“办公小浣熊”作为一种可能的解决方案，旨在帮助记者更高效地从海量数据中发现有价值的新闻线索。"
+# 草稿状态 (保留原值)
+draft: true
+# --- 可选字段 ---
+# 文章作者 (保留原值)
+author: 黄作敏
+# 文章分类 (根据内容建议)
 categories:
  - "人工智能"
  - "新闻业"
  - "数据新闻"
+# 文章标签 (根据内容提炼 3-5 个)
 tags:
  - "AI"
  - "数据分析"
  - "新闻业"
  - "数据新闻"
  - "办公小浣熊"
-status: 专栏
-client: 
-duration: 6个月
-website: https://huangzuomin.com
-tech_stack:
-  - 数据新闻
-  - AI数据分析
-draft: false
 ---
+
+ 
 
 
 大家好，我是作敏。
@@ -56,13 +61,10 @@ draft: false
 
 ![image.png](https://pic.huangzuomin.com/20250508232247539.png)
 <center>Gemini 2.5 Pro的回答</center>
-
 ![image.png](https://pic.huangzuomin.com/20250508232318037.png)
 <center>Grok3的回答</center>
-
 ![image.png](https://pic.huangzuomin.com/20250508232349376.png)
 <center>Claude 3.7 的回答</center>
-
 ![image.png](https://pic.huangzuomin.com/20250508232409428.png)
 <center>DeepSeek R1的回答</center>
 
