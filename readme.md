@@ -571,3 +571,73 @@ hugo --minify
 3. 更新研究成果
 4. 确保所有图片资源放在正确位置
 5. 推送到 Git 仓库，触发自动部署
+
+
+**简明步骤：**
+
+1.  **检查项目状态 (可选但推荐):**
+    *   打开你的项目文件夹所在的终端或命令行。
+    *   输入命令：
+        ```bash
+        git status
+        ```
+    *   这会显示你修改、新增或删除的文件。确保你看到了你想推送的修改。
+
+2.  **暂存你的修改 (Add Changes):**
+    *   将你修改过的文件添加到暂存区。
+    *   暂存所有修改（包括新增、修改、删除的文件）：
+        ```bash
+        git add .
+        ```
+    *   或者，只暂存特定文件：
+        ```bash
+        git add <文件名1> <文件名2> ...
+        ```
+    *   （`git status` 命令可以再次确认哪些文件已被暂存）
+
+3.  **提交你的修改 (Commit Changes):**
+    *   将暂存区的修改提交到本地仓库，并写一条描述性的提交信息。
+    *   输入命令：
+        ```bash
+        git commit -m "你的提交信息"
+        ```
+    *   **重要:** `<你的提交信息>` 要简明扼要地说明你这次提交做了什么（比如："更新首页内容", "修复用户登录 bug" 等）。
+
+4.  **推送到 GitHub (Push to GitHub):**
+    *   将你的本地提交推送到关联的远程 GitHub 仓库。
+    *   输入命令（通常是推送到 `main` 或 `master` 分支）：
+        ```bash
+        git push origin <你的分支名>
+        ```
+    *   通常 `<你的分支名>` 是 `main` 或 `master`。如果你的分支名是 `main`，命令就是 `git push origin main`。
+    *   如果是第一次将本地分支推送到远程（例如，第一次推送 `main` 分支），可能需要使用 `-u` 参数来建立关联，方便以后直接使用 `git push`：
+        ```bash
+        git push -u origin <你的分支名>
+        ```
+
+---
+
+**步骤 0: 关联本地仓库和 GitHub 远程仓库 (如果未关联)**
+
+如果你本地的项目还没有和 GitHub 仓库关联，需要先进行这一步：
+
+1.  **在 GitHub 创建一个空仓库：** 复制该仓库的 HTTPS 或 SSH URL。
+2.  **在你的本地项目文件夹中打开终端。**
+3.  **移除可能存在的旧远程地址 (如果确定要替换):**
+    ```bash
+    git remote remove origin
+    ```
+4.  **添加新的远程地址：**
+    ```bash
+    git remote add origin <你的GitHub仓库URL>
+    ```
+    例如：`git remote add origin https://github.com/yourusername/your-repo-name.git`
+5.  **验证是否添加成功：**
+    ```bash
+    git remote -v
+    ```
+    应该能看到 origin 对应的 fetch 和 push 地址。
+
+完成步骤 0 后，就可以回到上面的简明步骤进行 Add -> Commit -> Push 操作了。
+
+希望这个教程能帮到你！
