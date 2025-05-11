@@ -148,15 +148,25 @@ tags:
 TABLE WITHOUT ID
 
 TABLE WITHOUT ID
+
     link(file.link, 选题标题) AS "选题（点击查看）",
+    
     来源网站,
+    
     捕获日期,
+    
     选题状态,
+    
     重要性,
+    
     时效性,
+    
     核心摘要
+    
 FROM "选题库" // 修改为你的选题存放文件夹路径
+
 WHERE 选题状态 != "归档" AND 选题状态 != "已发稿" // 排除已完成或归档的
+
 SORT 时效性 ASC, 重要性 DESC, 捕获日期 DESC
 
 {{< /notice >}}
