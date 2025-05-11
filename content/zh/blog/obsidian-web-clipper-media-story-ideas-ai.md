@@ -64,9 +64,7 @@ tags:
     
 - **笔记属性 (Properties - YAML Frontmatter)**：这是结构化的核心。
     
-    YAML
-    
-    ```
+{{< notice "YAML" >}}
     ---
     选题标题: "{{title}}"
     来源URL: "{{url}}"
@@ -86,8 +84,9 @@ tags:
     待办事项: []
     标签: [选题]
     ---
-    ```
-    
+{{< /notice >}}
+
+
 - **笔记内容格式 (Note Content Format)**：可以在 YAML Frontmatter 之下，定义正文区域的默认结构。例如，简单地保留 `{{content}}` 作为剪藏的原始内容，或者为其添加特定标题。
     
 
@@ -144,9 +143,8 @@ tags:
 
 新建一个 Obsidian 笔记，例如命名为“选题仪表盘”，在其中插入 Dataview 代码块：
 
-代码段
 
-```
+{{< notice "代码段" >}}
 TABLE WITHOUT ID
     link(file.link, 选题标题) AS "选题（点击查看）",
     来源网站,
@@ -158,7 +156,7 @@ TABLE WITHOUT ID
 FROM "选题库" // 修改为你的选题存放文件夹路径
 WHERE 选题状态 != "归档" AND 选题状态 != "已发稿" // 排除已完成或归档的
 SORT 时效性 ASC, 重要性 DESC, 捕获日期 DESC
-```
+{{< /notice >}}
 
 这个查询会动态列出所有未完成的选题，并按照时效性、重要性、捕获日期进行排序。你可以根据模板中定义的任何字段进行筛选和排序，创建不同维度的选题视图，如“本周高重要性选题”、“待核实线索列表”等。
 
