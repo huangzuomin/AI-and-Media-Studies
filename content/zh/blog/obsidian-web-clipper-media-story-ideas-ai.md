@@ -1,31 +1,25 @@
 ---
-# 文章标题 (根据内容生成/修改)
-title: "媒体人的高效选题库：Obsidian Web Clipper与AI实战"
-# 文章发布日期和时间 (保留原值)
+title: 媒体人的高效选题库：Obsidian Web Clipper与AI实战
 date: 2025-05-11T23:19:38+08:00
-# 文章 SEO 描述 (根据内容生成)
-description: "本文为媒体人提供一套利用Obsidian Web Clipper构建高效选题库的实战指南，详细介绍如何结合模板、AI智能处理和Dataview，系统化管理和孵化新闻线索。"
-# 文章列表页摘要 (根据内容生成)
-summary: "面对海量信息，媒体人如何高效捕捉和管理选题？本文深入探讨了如何利用Obsidian Web Clipper的剪藏、模板、AI Interpreter和Dataview功能，打造一个智能化的选题管理系统，并分享了一套从捕获到归档的完整工作流程，助你从信息过载中解放，实现选题自由。"
-# 草稿状态 (保留原值)
-draft: true
-# --- 可选字段 ---
-# 文章作者 (保留原值)
-author: "黄作敏"
-# 文章分类 (根据内容建议)
+description: 本文为媒体人提供一套利用Obsidian Web Clipper构建高效选题库的实战指南，详细介绍如何结合模板、AI智能处理和Dataview，系统化管理和孵化新闻线索。
+summary: 面对海量信息，媒体人如何高效捕捉和管理选题？本文深入探讨了如何利用Obsidian Web Clipper的剪藏、模板、AI Interpreter和Dataview功能，打造一个智能化的选题管理系统，并分享了一套从捕获到归档的完整工作流程，助你从信息过载中解放，实现选题自由。
+draft: false
+author: 黄作敏
 categories:
-  - "媒体"
-  - "Obsidian"
-  - "效率工具"
-# 文章标签 (根据内容提炼 3-5 个)
+  - 媒体
+  - Obsidian
+  - 效率工具
 tags:
-  - "Obsidian"
-  - "Web Clipper"
-  - "选题管理"
-  - "媒体工作流"
-  - "AI应用"
+  - Obsidian
+  - Web
+  - Clipper
+  - 选题管理
+  - 媒体工作流
+  - AI应用
 ---
  
+![jimeng-2025-05-02-42-.jpeg](https://pic.huangzuomin.com/20250511232922238.jpeg)
+
 
 
 作为媒体人，我们每天都在与海量信息打交道。一个突发的灵感、一条社交媒体上的线索、一份深度报告中的数据，都可能成为下一篇重磅报道的起点。但问题在于，如何高效捕捉、系统整理并持续孵化这些宝贵的“选题火花”？传统的文件收藏、笔记 बिखराव 往往让我们在真正需要时，陷入“书到用时方恨少”的窘境。

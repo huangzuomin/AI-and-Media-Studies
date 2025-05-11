@@ -607,7 +607,7 @@ hugo --minify
     *   将你的本地提交推送到关联的远程 GitHub 仓库。
     *   输入命令（通常是推送到 `main` 或 `master` 分支）：
         ```bash
-        git push origin <你的分支名>
+        git push origin main
         ```
     *   通常 `<你的分支名>` 是 `main` 或 `master`。如果你的分支名是 `main`，命令就是 `git push origin main`。
     *   如果是第一次将本地分支推送到远程（例如，第一次推送 `main` 分支），可能需要使用 `-u` 参数来建立关联，方便以后直接使用 `git push`：
