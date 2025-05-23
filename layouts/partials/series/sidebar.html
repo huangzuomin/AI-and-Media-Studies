@@ -1,0 +1,29 @@
+<!-- 专题侧边栏 -->
+{{ $seriesPath := path.Dir .File.Path }}
+{{ $seriesIndexPath := path.Join $seriesPath "_index.md" }}
+{{ $seriesIndex := site.GetPage $seriesIndexPath }}
+
+<div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6 sticky top-24">
+  <!-- 专题信息 -->
+  <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">
+    {{ $seriesIndex.Title }}
+  </h3>
+  
+  <div class="mb-6">
+    <p class="text-text dark:text-darkmode-text mb-4">{{ $seriesIndex.Description }}</p>
+    
+    <!-- 专题文章列表 -->
+    <h4 class="h6 mb-3 text-text-dark dark:text-darkmode-text-dark">专题文章</h4>
+    <ul class="space-y-2">
+      {{ $seriesPages := where (site.GetPage $seriesPath).Pages "Kind" "page" }}
+      {{ range $seriesPages.ByWeight }}
+        <li>
+          <a href="{{ .RelPermalink }}" 
+             class="block py-1 px-2 rounded {{ if eq . $ }}bg-primary text-white{{ else }}hover:bg-gray-100 dark:hover:bg-darkmode-light{{ end }}">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

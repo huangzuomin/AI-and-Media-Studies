@@ -2,6 +2,7 @@
 title: "实践坊"
 description: "探索我们在AI与媒体交叉领域的创新项目与实践应用"
 image: "/images/projects-banner.jpg"
+layout: "list"
 ---
 
 ####  项目案例 

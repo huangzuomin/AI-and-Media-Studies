@@ -1,0 +1,52 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section dark:bg-darkmode-body">
+    <div class="container">
+      <div class="row">
+        <div class="lg:col-8">
+          <div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6">
+            <!-- 项目图片 -->
+            {{ if .Params.image }}
+              <div class="mb-8">
+                <img 
+                  src="{{ .Params.image }}" 
+                  alt="{{ .Title }}" 
+                  class="w-full h-auto rounded-lg"
+                >
+              </div>
+            {{ end }}
+            
+            <!-- 项目内容 -->
+            <div class="content">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:col-4">
+          <!-- 专题侧边栏 -->
+          {{ partial "series/sidebar" . }}
+          
+          <!-- 文章信息 -->
+          {{ partial "series/article-info" . }}
+        </div>
+      </div>
+      
+      <!-- 相关项目 -->
+      {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ with $related }}
+        <div class="mt-16">
+          <h2 class="h3 mb-8 text-center text-text-dark dark:text-darkmode-text-dark">相关文章</h2>
+          <div class="row">
+            {{ range . }}
+              <div class="lg:col-4 md:col-6 mb-8">
+                {{ partial "components/project-card" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

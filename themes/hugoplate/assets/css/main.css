@@ -5,8 +5,6 @@
 @plugin "./tailwind-plugin/tw-bs-grid";
 @source "hugo_stats.json";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @import "./safe.css";
 @import "./utilities.css";
 

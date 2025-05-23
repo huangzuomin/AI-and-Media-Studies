@@ -97,7 +97,7 @@
               <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">项目类别</h3>
               <div class="mb-6">
                 {{ range . }}
-                  <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-sm dark:bg-darkmode-light dark:text-darkmode-text-dark">{{ . }}</span>
+                  <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-sm dark:bg-primary dark:bg-opacity-20 dark:text-white">{{ . }}</span>
                 {{ end }}
               </div>
             {{ end }}
@@ -107,7 +107,7 @@
               <h3 class="h5 mb-3 pb-2 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">项目标签</h3>
               <div>
                 {{ range . }}
-                  <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-sm text-text-dark dark:text-darkmode-text-dark">{{ . }}</span>
+                  <span class="inline-block bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded mr-2 mb-2 text-sm text-gray-800 dark:text-gray-200">{{ . }}</span>
                 {{ end }}
               </div>
             {{ end }}

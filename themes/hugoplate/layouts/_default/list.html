@@ -1,20 +1,49 @@
 {{ define "main" }}
   {{ partial "page-header" . }}
 
-
   <section class="section">
     <div class="container">
-      <ul class="text-center">
-        {{ range .RegularPages }}
-          <li class="m-3">
-            <a
-              href="{{ .Permalink }}"
-              class="text-text-dark dark:text-darkmode-text-dark block text-xl">
-              {{ .Title }}
-            </a>
-          </li>
+      <div class="row">
+        {{ $pages := .Pages }}
+        {{ if .IsHome }}
+          {{ $pages = .Site.RegularPages }}
         {{ end }}
-      </ul>
+        
+        {{ range .Site.Pages }}
+          {{/* 检查 .File 是否存在，以及页面是否在 projects/ 目录下且不是区段页面 */}}
+          {{ if and .File (not .IsSection) (in .File.Dir "projects/") }}
+            <div class="col-12 mb-4">
+              <div class="card h-100">
+                {{ if .Params.image }}
+                  <img src="{{ .Params.image | relURL }}" class="card-img-top" alt="{{ .Title }}">
+                {{ end }}
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                  </h3>
+                  <p class="card-text">{{ .Description }}</p>
+                  <div class="card-meta">
+                    {{ if .Params.categories }}
+                      <span class="text-muted">
+                        {{ range .Params.categories }}
+                          <a href="{{ "categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                        {{ end }}
+                      </span>
+                    {{ end }}
+                    {{ if .Params.tags }}
+                      <span class="text-muted">
+                        {{ range .Params.tags }}
+                          <a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+                        {{ end }}
+                      </span>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
     </div>
   </section>
 {{ end }}

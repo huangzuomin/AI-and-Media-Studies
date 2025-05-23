@@ -442,3 +442,15 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px; /* 考虑到导航栏的高度 */
 }
+
+/* 修正专栏/类别标签在浅色模式下的对比度 */
+.bg-primary.bg-opacity-10.text-primary {
+  background-color: #e0f2fe !important; /* 浅蓝色背景 */
+  color: #2563eb !important;            /* 深蓝色文字 */
+}
+
+.card span.bg-primary,
+.card span.bg-primary.bg-opacity-10 {
+  background-color: #e0f2fe !important;
+  color: #2563eb !important;
+}

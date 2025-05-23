@@ -14,7 +14,35 @@
 
       <!-- 项目类别过滤 (如果有类别) -->
       {{ $categories := slice }}
-      {{ range .RegularPages }}
+      
+      <!-- 获取所有项目文章，包括子目录 -->
+      {{ $projectPages := slice }}
+      
+      <!-- 先添加当前目录下的常规页面 -->
+      {{ $projectPages = $projectPages | append .RegularPages }}
+      
+      <!-- 然后添加子目录中的页面，但不包括已经添加过的页面 -->
+      {{ range .Pages }}
+        {{ if .IsSection }}
+          {{ range .RegularPages }}
+            <!-- 检查页面是否已经存在于集合中 -->
+            {{ $exists := false }}
+            {{ range $projectPages }}
+              {{ if eq .Permalink $.Permalink }}
+                {{ $exists = true }}
+              {{ end }}
+            {{ end }}
+            
+            <!-- 如果页面不存在，则添加 -->
+            {{ if not $exists }}
+              {{ $projectPages = $projectPages | append . }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      
+      <!-- 收集所有类别 -->
+      {{ range $projectPages }}
         {{ with .Params.categories }}
           {{ range . }}
             {{ $categories = $categories | append . }}
@@ -38,7 +66,7 @@
 
       <!-- 项目列表 -->
       <div class="row">
-        {{ range .RegularPages }}
+        {{ range $projectPages }}
           <div class="lg:col-4 md:col-6 mb-8 project-item"
             {{ with .Params.categories }}
               data-categories='{{ delimit . "," }}'

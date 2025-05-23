@@ -1,0 +1,38 @@
+<!-- 文章信息卡片 -->
+<div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6 sticky top-24">
+  <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">文章信息</h3>
+  
+  <div class="mb-6">
+    <!-- 文章日期 -->
+    {{ with .Date }}
+      <div class="flex items-start mb-3">
+        <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">发布日期:</span>
+        <span class="text-text dark:text-darkmode-text">{{ .Format "2006年01月02日" }}</span>
+      </div>
+    {{ end }}
+    
+    <!-- 文章类别 -->
+    {{ with .Params.categories }}
+      <div class="flex items-start mb-3">
+        <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">分类:</span>
+        <div>
+          {{ range . }}
+            <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-sm dark:bg-primary dark:bg-opacity-20 dark:text-white">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+    
+    <!-- 文章标签 -->
+    {{ with .Params.tags }}
+      <div class="flex items-start mb-3">
+        <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">标签:</span>
+        <div>
+          {{ range . }}
+            <span class="inline-block bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded mr-2 mb-2 text-sm text-gray-800 dark:text-gray-200">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

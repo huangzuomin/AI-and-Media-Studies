@@ -17,6 +17,10 @@ defaultContentLanguage = 'zh' # Change to Chinese as default
 # defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
 defaultContentLanguageInSubdir = true # <-- 设置为 true
 
+[params]
+  theme_switcher = false # 禁用主题切换器
+  theme_default = "light" # 设置默认主题为亮色模式
+
 ########################## Languages #############################
 # 定义网站支持的语言
 [languages]
