@@ -1,0 +1,112 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section dark:bg-darkmode-body">
+    <div class="container">
+      <div class="row">
+        <div class="lg:col-8">
+          <div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6">
+            <!-- 项目图片 -->
+            {{ if .Params.image }}
+              <div class="mb-8">
+                <img 
+                  src="{{ .Params.image }}" 
+                  alt="{{ .Title }}" 
+                  class="w-full h-auto rounded-lg"
+                >
+              </div>
+            {{ end }}
+            
+            <!-- 项目内容 -->
+            <div class="content">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:col-4">
+          <div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6 sticky top-24">
+            <!-- 专题信息 -->
+            {{ $seriesPath := path.Dir .File.Path }}
+            {{ $seriesIndexPath := path.Join $seriesPath "_index.md" }}
+            {{ $seriesIndex := site.GetPage $seriesIndexPath }}
+            
+            <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">
+              {{ $seriesIndex.Title }}
+            </h3>
+            
+            <div class="mb-6">
+              <p class="text-text dark:text-darkmode-text mb-4">{{ $seriesIndex.Description }}</p>
+              
+              <!-- 专题文章列表 -->
+              <h4 class="h6 mb-3 text-text-dark dark:text-darkmode-text-dark">专题文章</h4>
+              <ul class="space-y-2">
+                {{ $seriesPages := where (site.GetPage $seriesPath).Pages "Kind" "page" }}
+                {{ range $seriesPages.ByWeight }}
+                  <li>
+                    <a href="{{ .RelPermalink }}" 
+                       class="block py-1 px-2 rounded {{ if eq . $ }}bg-primary text-white{{ else }}hover:bg-gray-100 dark:hover:bg-darkmode-light{{ end }}">
+                      {{ .Title }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+            
+            <!-- 项目信息卡片 -->
+            <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">文章信息</h3>
+            
+            <div class="mb-6">
+              <!-- 项目日期 -->
+              {{ with .Date }}
+                <div class="flex items-start mb-3">
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">发布日期:</span>
+                  <span class="text-text dark:text-darkmode-text">{{ .Format "2006年01月02日" }}</span>
+                </div>
+              {{ end }}
+              
+              <!-- 项目类别 -->
+              {{ with .Params.categories }}
+                <div class="flex items-start mb-3">
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">分类:</span>
+                  <div>
+                    {{ range . }}
+                      <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-sm dark:bg-darkmode-light dark:text-darkmode-text-dark">{{ . }}</span>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
+              
+              <!-- 项目标签 -->
+              {{ with .Params.tags }}
+                <div class="flex items-start mb-3">
+                  <span class="w-28 font-medium text-text-dark dark:text-darkmode-text-dark">标签:</span>
+                  <div>
+                    {{ range . }}
+                      <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-sm text-text-dark dark:text-darkmode-text-dark">{{ . }}</span>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 相关项目 -->
+      {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ with $related }}
+        <div class="mt-16">
+          <h2 class="h3 mb-8 text-center text-text-dark dark:text-darkmode-text-dark">相关文章</h2>
+          <div class="row">
+            {{ range . }}
+              <div class="lg:col-4 md:col-6 mb-8">
+                {{ partial "components/project-card" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

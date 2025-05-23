@@ -1,8 +1,28 @@
 <!-- 专题侧边栏 -->
-{{ $seriesPath := path.Dir .File.Path }}
+{{ $currentPage := . }}
+{{ $seriesPath := "" }}
+
+<!-- 尝试从文件路径获取专题路径 -->
+{{ if .File }}
+  {{ $seriesPath = path.Dir .File.Path }}
+{{ else }}
+  <!-- 从URL推断专题路径 -->
+  {{ $urlParts := split (trim .RelPermalink "/") "/" }}
+  {{ if ge (len $urlParts) 3 }}
+    {{ $seriesPath = printf "content/%s/%s/%s" (index $urlParts 0) (index $urlParts 1) (index $urlParts 2) }}
+  {{ end }}
+{{ end }}
+
+<!-- 如果是全栈记者专题，直接指定路径 -->
+{{ if in .RelPermalink "fullstack-journalist" }}
+  {{ $seriesPath = "content/zh/projects/fullstack-journalist" }}
+{{ end }}
+
 {{ $seriesIndexPath := path.Join $seriesPath "_index.md" }}
 {{ $seriesIndex := site.GetPage $seriesIndexPath }}
 
+<!-- 确保找到了专题索引页 -->
+{{ if $seriesIndex }}
 <div class="bg-white dark:bg-darkmode-theme-light rounded-lg p-6 shadow-md mb-6 sticky top-24">
   <!-- 专题信息 -->
   <h3 class="h5 mb-4 pb-3 border-b dark:border-darkmode-border text-text-dark dark:text-darkmode-text-dark">
@@ -27,3 +47,4 @@
     </ul>
   </div>
 </div>
+{{ end }}
