@@ -41,7 +41,7 @@
     {{ with .Params.categories }}
       <div class="mb-3">
         {{ range first 2 . }}
-          <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-xs dark:bg-primary dark:bg-opacity-20 dark:text-white">{{ . }}</span>
+          <span class="inline-block bg-primary bg-opacity-10 text-primary px-2 py-1 rounded mr-2 mb-2 text-xs dark:bg-darkmode-light dark:text-darkmode-text-dark">{{ . }}</span>
         {{ end }}
         {{ if gt (len .) 2 }}
           <span class="inline-block text-xs text-text dark:text-darkmode-text">+{{ sub (len .) 2 }} 更多</span>
@@ -53,7 +53,7 @@
     {{ with .Params.tech_stack }}
       <div class="mb-4">
         {{ range first 3 . }}
-          <span class="inline-block bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded mr-2 mb-2 text-xs text-gray-800 dark:text-gray-200">{{ . }}</span>
+          <span class="inline-block bg-gray-100 dark:bg-darkmode-bg px-2 py-1 rounded mr-2 mb-2 text-xs text-text-dark dark:text-darkmode-text-dark">{{ . }}</span>
         {{ end }}
         {{ if gt (len .) 3 }}
           <span class="inline-block text-xs text-text dark:text-darkmode-text">+{{ sub (len .) 3 }} 更多</span>
