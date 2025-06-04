@@ -67,7 +67,7 @@
       <!-- 项目列表 -->
       <div class="row">
         {{ range $projectPages }}
-          <div class="lg:col-4 md:col-6 mb-8 project-item"
+          <div class="lg:col-4 md:col-6 sm:col-1 mb-8 project-item"
             {{ with .Params.categories }}
               data-categories='{{ delimit . "," }}'
             {{ end }}>

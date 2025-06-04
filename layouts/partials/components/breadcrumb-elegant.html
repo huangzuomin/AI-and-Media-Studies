@@ -1,0 +1,44 @@
+<!-- 优雅的面包屑导航组件 -->
+{{ $context := .Context }}
+{{ $class := .Class }}
+{{ $base := site.Home.Permalink }}
+
+<div class="{{ $class }} flex items-center space-x-2 text-sm">
+  <!-- 首页链接 -->
+  <a href="{{ $base }}" 
+     class="text-text dark:text-darkmode-text hover:text-primary dark:hover:text-primary transition-colors duration-200 flex items-center">
+    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+    </svg>
+    {{ T "home" | default "首页" }}
+  </a>
+  
+  {{ range $i, $e:= $context.Ancestors.Reverse }}
+    {{ if and (not .IsHome) (ne .Title "Pages") }}
+      <!-- 分隔符 -->
+      <span class="text-text-light dark:text-darkmode-text-light">
+        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+        </svg>
+      </span>
+      
+      <!-- 父级页面链接 -->
+      <a href="{{ .RelPermalink }}"
+         class="text-text dark:text-darkmode-text hover:text-primary dark:hover:text-primary transition-colors duration-200">
+        {{ T (printf "%s" (lower .Title)) | default .Title }}
+      </a>
+    {{ end }}
+  {{ end }}
+  
+  <!-- 分隔符 -->
+  <span class="text-text-light dark:text-darkmode-text-light">
+    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+    </svg>
+  </span>
+  
+  <!-- 当前页面 -->
+  <span class="text-primary dark:text-primary font-medium">
+    {{ T (printf "%s" (lower $context.Title)) | default $context.Title }}
+  </span>
+</div>

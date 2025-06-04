@@ -1,0 +1,25 @@
+<!-- 优化后的页面标题区域 - 无背景色块，简洁设计 -->
+<section class="section-sm pb-0">
+  <div class="container">
+    <div class="text-center">
+      <!-- 页面标题 -->
+      <h1 class="mb-4 text-h2 lg:text-h1 text-dark dark:text-white font-bold">
+        {{ T (printf "%s" (lower .Title)) | default .Title | title }}
+      </h1>
+      
+      <!-- 页面描述（已移除） -->
+      {{/* 移除摘要显示
+      {{ with .Params.description }}
+        <p class="mb-6 text-lg text-text dark:text-darkmode-text max-w-3xl mx-auto">
+          {{ . | markdownify }}
+        </p>
+      {{ end }}
+      */}}
+      
+      <!-- 优雅的面包屑导航 -->
+      <nav class="breadcrumb-nav" aria-label="面包屑导航">
+        {{ partial "components/breadcrumb-elegant" (dict "Context" . "Class" "justify-center") }}
+      </nav>
+    </div>
+  </div>
+</section>

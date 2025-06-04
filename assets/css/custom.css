@@ -454,3 +454,253 @@ html {
   background-color: #e0f2fe !important;
   color: #2563eb !important;
 }
+
+/* ===== 实践坊栏目移动端优化样式 ===== */
+
+/* 移动端项目列表优化 */
+@media (max-width: 768px) {
+  /* 项目卡片在移动端单列显示，增加间距 */
+  .project-item {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* 页面标题字体显著增大 */
+  .section-sm h1,
+  .page-header h1 {
+    font-size: 2rem !important; /* 32px - 显著增大标题 */
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* 正文内容字体大幅增大 - 对应图2效果 */
+  .content p,
+  .prose p,
+  .text-text,
+  body,
+  .card-body p {
+    font-size: 1.125rem !important; /* 18px，比默认16px更大 */
+    line-height: 1.8 !important;
+    font-weight: 400 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* 二级标题大幅增大 */
+  .content h2,
+  .prose h2 {
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    margin-bottom: 1.25rem !important;
+  }
+  
+  /* 三级标题增大 */
+  .content h3,
+  .prose h3 {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* 四级标题增大 */
+  .content h4,
+  .prose h4 {
+    font-size: 1.25rem !important; /* 20px - 覆盖之前的1.1rem */
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.875rem !important;
+  }
+  
+  /* 项目卡片标题增大 */
+  .card .card-body h5,
+  .card-title {
+    font-size: 1.2rem !important; /* 19.2px */
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+  }
+  
+  /* 项目卡片描述文字增大 */
+  .card .card-body p,
+  .card-text {
+    font-size: 1.05rem !important; /* 16.8px */
+    line-height: 1.7 !important;
+  }
+  
+  /* 按钮文字增大 */
+  .btn {
+    font-size: 1rem !important; /* 16px */
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 500 !important;
+  }
+  
+  /* 标签和分类文字增大 */
+  .badge,
+  .tag {
+    font-size: 0.875rem !important; /* 14px */
+    padding: 0.5rem 0.8rem !important;
+    font-weight: 500 !important;
+  }
+  
+  /* 列表项文字增大 */
+  .content ul li,
+  .content ol li,
+  .prose ul li,
+  .prose ol li {
+    font-size: 1.125rem !important; /* 18px，与正文一致 */
+    line-height: 1.8 !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  /* 引用块文字增大 */
+  .content blockquote,
+  .prose blockquote {
+    font-size: 1.2rem !important; /* 19.2px */
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+  }
+  
+  /* 导航菜单文字增大 */
+  .navbar-nav .nav-link {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+  }
+  
+  /* 面包屑导航文字增大 */
+  .breadcrumb-nav {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+  
+  .breadcrumb-nav svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  
+  /* 表格文字增大 */
+  .content table,
+  .prose table {
+    font-size: 1.05rem !important;
+  }
+  
+  /* 代码块文字适当增大 */
+  .content pre,
+  .content code,
+  .prose pre,
+  .prose code {
+    font-size: 0.95rem !important;
+  }
+  
+  /* 项目卡片悬停效果在移动端禁用 */
+  .project-item:hover {
+    transform: none !important;
+  }
+  
+  .card:hover {
+    transform: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .card:hover .card-img-top img {
+    transform: none !important;
+  }
+}
+
+/* 超小屏幕（小于480px）进一步优化 */
+@media (max-width: 480px) {
+  .section-sm h1,
+  .page-header h1 {
+    font-size: 1.875rem !important; /* 30px */
+  }
+  
+  .content p,
+  .prose p,
+  .text-text,
+  body {
+    font-size: 1.2rem !important; /* 19.2px，在超小屏幕上更大 */
+    line-height: 1.9 !important;
+  }
+  
+  .content h2,
+  .prose h2 {
+    font-size: 1.625rem !important; /* 26px */
+  }
+  
+  .content h3,
+  .prose h3 {
+    font-size: 1.375rem !important; /* 22px */
+  }
+}
+
+/* 页面标题样式优化 */
+.section-sm {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* 移动端隐藏面包屑导航 */
+@media (max-width: 767px) {
+  .breadcrumb-nav {
+    display: none;
+  }
+}
+
+/* 优化页面标题在移动端的间距 */
+@media (max-width: 767px) {
+  .section-sm.pb-0 {
+    padding-bottom: 1rem;
+  }
+  
+  .section-sm.pb-0 h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+.breadcrumb-nav {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(var(--color-light-rgb), 0.5);
+  border-radius: 2rem;
+  border: 1px solid rgba(var(--color-border-rgb), 0.2);
+  display: inline-block;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.dark .breadcrumb-nav {
+  background: rgba(var(--color-darkmode-light-rgb), 0.3);
+  border-color: rgba(var(--color-darkmode-border-rgb), 0.3);
+}
+
+.breadcrumb-nav:hover {
+  background: rgba(var(--color-light-rgb), 0.8);
+  border-color: rgba(var(--color-primary-rgb), 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .breadcrumb-nav:hover {
+  background: rgba(var(--color-darkmode-light-rgb), 0.5);
+  border-color: rgba(var(--color-primary-rgb), 0.4);
+}
+/* 强制禁用暗色模式 */
+:root {
+  color-scheme: light only;
+}
+
+/* 隐藏主题切换按钮 */
+.theme-switcher,
+[data-theme-toggle],
+.dark-mode-toggle {
+  display: none !important;
+}
+
+/* 确保始终使用亮色模式样式 */
+html[data-theme="dark"],
+html.dark,
+.dark {
+  color-scheme: light;
+}
+
