@@ -33,3 +33,7 @@ npm install
 # run the build command
 echo "Running the build command..."
 npm run build
+
+# inject API key into static files
+echo "Injecting API key into static files..."
+node scripts/build-with-api.js
