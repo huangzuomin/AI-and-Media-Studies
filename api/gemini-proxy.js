@@ -11,12 +11,12 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY; // 从环境变量读取
 app.post('/api/gemini', async (req, res) => {
     try {
         const { prompt } = req.body;
-        
+
         // 添加请求验证和限制
         if (!prompt || prompt.length > 1000) {
             return res.status(400).json({ error: '无效的提示词' });
         }
-        
+
         const response = await fetch(
             `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
             {
@@ -27,7 +27,7 @@ app.post('/api/gemini', async (req, res) => {
                 })
             }
         );
-        
+
         const result = await response.json();
         res.json(result);
     } catch (error) {
