@@ -1,5 +1,1 @@
-@supports (height: 0svh) {
-    :root {
-        --vbody: calc(100svh - var(--vhead) - var(--vfoot));
-    }
-}
+@supports (height: 0svh) { :root { --vbody: calc(100svh - var(--vhead) - var(--vfoot)); } }

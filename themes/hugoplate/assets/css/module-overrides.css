@@ -5,11 +5,11 @@
 
 /* share icons */
 .share-icons .share-link {
-  @apply h-9 w-9 rounded leading-9 bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary;
+  @apply h-9 w-9 rounded leading-9 bg-primary hover:bg-primary;
 }
 
 .share-icons .share-icon svg {
-  @apply dark:fill-darkmode-light;
+  /* 移除暗色模式样式 */
 }
 
 .fediverse-input-wrapper {
@@ -18,7 +18,7 @@
     @apply rounded focus:border-primary focus:ring-0;
   }
   button {
-    @apply rounded bg-primary dark:bg-darkmode-primary text-light dark:text-darkmode-light hover:bg-primary dark:hover:bg-darkmode-primary;
+    @apply rounded bg-primary text-light hover:bg-primary;
   }
 }
 

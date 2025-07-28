@@ -1,0 +1,41 @@
+/* 强制覆盖所有暗色模式样式 */
+
+/* 移动端系统主题检测覆盖 */
+@media (max-width: 768px) {
+  @media (prefers-color-scheme: dark) {
+    :root, html, body {
+      background-color: #ffffff !important;
+      color: #444444 !important;
+    }
+    
+    /* 覆盖所有可能的暗色背景 */
+    * {
+      background-color: inherit !important;
+    }
+  }
+}
+
+/* 全局覆盖，确保即使有dark类也使用亮色 */
+html.dark,
+html.dark body,
+html.dark * {
+  background-color: #ffffff !important;
+  color: #444444 !important;
+}
+
+/* 覆盖特定的暗色模式元素 */
+.dark .bg-darkmode-body,
+.dark .text-darkmode-text,
+.dark .border-darkmode-border,
+[class*="dark:bg-darkmode"],
+[class*="dark:text-darkmode"],
+[class*="dark:border-darkmode"] {
+  background-color: #ffffff !important;
+  color: #444444 !important;
+  border-color: #eaeaea !important;
+}
+
+/* 确保主题切换器不显示 */
+.theme-switcher {
+  display: none !important;
+}

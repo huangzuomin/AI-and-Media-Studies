@@ -1,0 +1,90 @@
+<!-- 移动端强制亮色模式 -->
+<style>
+/* 针对移动端的系统主题检测覆盖 */
+@media (max-width: 768px) {
+  @media (prefers-color-scheme: dark) {
+    :root, html, body {
+      background-color: #ffffff !important;
+      color: #444444 !important;
+    }
+    
+    /* 强制所有可能的暗色元素使用亮色 */
+    * {
+      background-color: inherit !important;
+    }
+  }
+}
+
+/* 确保HTML元素始终为light类 */
+html {
+  background-color: #ffffff !important;
+  color: #444444 !important;
+}
+
+html.dark {
+  background-color: #ffffff !important;
+  color: #444444 !important;
+}
+</style>
+
+<script>
+// 移动端强制亮色模式脚本
+(function() {
+  'use strict';
+  
+  // 检测是否为移动设备
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+  
+  // 强制移除dark类
+  function forceRemoveDark() {
+    if (isMobile()) {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      
+      // 确保localStorage设置为light
+      try {
+        localStorage.setItem('theme', 'light');
+      } catch (e) {
+        // 忽略错误
+      }
+    }
+  }
+  
+  // 覆盖移动端的媒体查询检测
+  if (isMobile() && window.matchMedia) {
+    const originalMatchMedia = window.matchMedia;
+    window.matchMedia = function(query) {
+      if (query.includes('prefers-color-scheme')) {
+        // 在移动端总是返回light模式
+        return {
+          matches: query.includes('light'),
+          media: query,
+          onchange: null,
+          addListener: function() {},
+          removeListener: function() {},
+          addEventListener: function() {},
+          removeEventListener: function() {},
+          dispatchEvent: function() { return true; }
+        };
+      }
+      return originalMatchMedia.call(this, query);
+    };
+  }
+  
+  // 初始化
+  forceRemoveDark();
+  
+  // 监听窗口大小变化
+  window.addEventListener('resize', forceRemoveDark);
+  
+  // DOM加载完成后执行
+  document.addEventListener('DOMContentLoaded', forceRemoveDark);
+  
+  // 定期检查（仅在移动端）
+  if (isMobile()) {
+    setInterval(forceRemoveDark, 2000);
+  }
+})();
+</script>
