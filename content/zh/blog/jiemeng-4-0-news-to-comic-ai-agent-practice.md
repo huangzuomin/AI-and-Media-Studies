@@ -50,7 +50,8 @@ tags:
 
 ![1dca0ce4115b9c70b09de2b9a4880585.jpg](https://pic.huangzuomin.com/20250909220813077.jpg)
 
-![](https://pic.huangzuomin.com/20250909220800959.jpg)
+ ![f0796e60803dfac542d246d9d07e0f1e.jpg](https://pic.huangzuomin.com/20250909223702764.jpg)
+
 
 ### 顿悟：一次“通勤路上”的思维风暴
 
